@@ -11,19 +11,28 @@
 
 namespace {
 	bool isAPrimeNumber(int n) {
-		bool isAPrime = false;
-		if((n%2) == 0 &&
-		   (n%3) == 0 &&
-		   (n%5) == 0 &&
-		   (n&7) == 0 &&
-		   (n&11) == 0) {
-			isAPrime = true;
+		bool isAPrime = true;
+		if(n <= 1) {
+			return false;
 		}
+
+		for(int index = 2; index * index <= n; index++) {
+			if(n%index == 0) {
+				isAPrime = false;
+			}
+		}
+
 		return isAPrime;
 	}
 } // Anonymous Namespace
 
 int CountPrimes(int numberToBeCounted) {
+	int theCount = 0;
 
-
+	for(int index = 1; index < numberToBeCounted; index++) {
+		if(isAPrimeNumber(index)) {
+			theCount++;
+		}
+	}
+	return theCount;
 }

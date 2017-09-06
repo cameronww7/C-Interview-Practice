@@ -106,8 +106,8 @@ int main() {
 
 	//Count Primes Program
 	std::cout << "\n\nCount Primes Program";
-	int number = 5;
-	    expectedReturn = 9;
+	int number = 9;
+	    expectedReturn = 4;
 	int numberOfPrimes = CountPrimes(number);
 
 	if (numberOfPrimes == expectedReturn) {
