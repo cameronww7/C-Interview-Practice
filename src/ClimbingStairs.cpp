@@ -14,6 +14,25 @@
 
 #include "header.h"
 
-int climbStairs(int n) {
+int ClimbStairs(int numberOfStairs) {
+	int temp = 0;
 
+	int stepCount;
+	for(stepCount = 0; stepCount < numberOfStairs; stepCount++) {
+
+	}
+
+	if(numberOfStairs == stepCount) {
+		temp++;
+	}
+
+	for(int stepCount = 0; stepCount < numberOfStairs; stepCount = stepCount + 2) {
+
+	}
+	if(numberOfStairs == stepCount) {
+		temp++;
+	}
+
+
+	return temp;
 }

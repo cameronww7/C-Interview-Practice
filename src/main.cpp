@@ -26,7 +26,8 @@ int main() {
 	if (Palindrome == "abcba") {
 		std::cout << std::endl << "> Worked : Longest Palindrome : " << Palindrome;
 	} else {
-		std::cout << std::endl << "> Didn't Work : No Palindrome in String : " << Palindrome;
+		std::cout << std::endl << "> Didn't Work : No Palindrome in String : "
+																	 << Palindrome;
 	}
 
 
@@ -76,12 +77,30 @@ int main() {
 	const int myArrayOne[ARR_SIZE_ONE] = {1,2};
 	const int myArrayTwo[ARR_SIZE_TWO] = {3,4};
 	float goalMedian = 2.5;
-	float returnMedian = MedianOfTwoSortedArrays(myArrayOne, myArrayTwo, ARR_SIZE_ONE, ARR_SIZE_TWO);
+	float returnMedian = MedianOfTwoSortedArrays(myArrayOne, myArrayTwo,
+												 ARR_SIZE_ONE, ARR_SIZE_TWO);
 
 	if (returnMedian == goalMedian) {
-		std::cout << std::endl << "> Worked : " << returnMedian << " == " << goalMedian;
+		std::cout << std::endl << "> Worked : " << returnMedian
+							   << " == " << goalMedian;
 	} else {
-		std::cout << std::endl << "> Didn't Work : " << returnMedian << " == " << goalMedian;
+		std::cout << std::endl << "> Didn't Work : " << returnMedian
+				  	  	  	   << " == " << goalMedian;
+	}
+
+
+	//Climb Stairs Program
+	std::cout << "\n\nClimb Stairs Program";
+	int numberOfStairs = 3;
+	int expectedReturn = 3;
+	int possibleWaysToClimb = ClimbStairs(numberOfStairs);
+
+	if (possibleWaysToClimb == expectedReturn) {
+		std::cout << std::endl << "> Worked : " << possibleWaysToClimb
+							   << " == " << expectedReturn;
+	} else {
+		std::cout << std::endl << "> Didn't Work : " << possibleWaysToClimb
+							   << " == " << expectedReturn;
 	}
 
 

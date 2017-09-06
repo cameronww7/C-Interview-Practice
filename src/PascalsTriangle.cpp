@@ -19,6 +19,8 @@
 
 #include "header.h"
 
-vector<vector<int>> generate(int numRows) {
-
-}
+//vector <vector<int>> generate(int numRows) {
+//
+//
+//	return
+//}
