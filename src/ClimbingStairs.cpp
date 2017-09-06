@@ -14,25 +14,21 @@
 
 #include "header.h"
 
-int ClimbStairs(int numberOfStairs) {
-	int temp = 0;
-
-	int stepCount;
-	for(stepCount = 0; stepCount < numberOfStairs; stepCount++) {
-
+namespace {
+int Climb_Stairs(int stepCount, int numberOfStairs) {
+	if (stepCount > numberOfStairs) {
+		return 0;
 	}
 
-	if(numberOfStairs == stepCount) {
-		temp++;
+	if (stepCount == numberOfStairs) {
+		return 1;
 	}
 
-	for(int stepCount = 0; stepCount < numberOfStairs; stepCount = stepCount + 2) {
-
-	}
-	if(numberOfStairs == stepCount) {
-		temp++;
-	}
-
-
-	return temp;
+	return (Climb_Stairs(stepCount + 1, numberOfStairs) + Climb_Stairs(stepCount + 2, numberOfStairs));
 }
+}// Ananyomous Namespace
+
+int ClimbStairs(int numberOfStairs) {
+	return Climb_Stairs(0, numberOfStairs);
+}
+
