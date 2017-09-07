@@ -130,11 +130,15 @@ int main() {
 	bool canJumpFalse = CanJump(numStepFalse);
 
 	if (canJumpTrue == true && canJumpFalse == false) {
-		std::cout << std::endl << "> Worked : " << canJumpTrue  << " == " << true;
-		std::cout << std::endl << "> Worked : " << canJumpFalse << " == " << false;
+		std::cout << std::endl << "> Worked : " << canJumpTrue
+				  	  	  	  	  	  	  	 	<< " == " << true;
+		std::cout << std::endl << "> Worked : " << canJumpFalse
+												<< " == " << false;
 	} else {
-		std::cout << std::endl << "> Didn't Worked : " << canJumpTrue  << " == " << true;
-		std::cout << std::endl << "> Didn't Worked : " << canJumpFalse << " == " << false;
+		std::cout << std::endl << "> Didn't Worked : " << canJumpTrue
+													   << " == " << true;
+		std::cout << std::endl << "> Didn't Worked : " << canJumpFalse
+													   << " == " << false;
 	}
 
 	return 0;
