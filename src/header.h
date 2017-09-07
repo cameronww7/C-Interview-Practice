@@ -32,6 +32,8 @@ int ClimbStairs(int numberOfStairs);
 
 int CountPrimes(int numberToBeCounted);
 
+bool CanJump(vector <int> & nums);
+
 
 
 #endif /* HEADER_H_ */

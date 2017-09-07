@@ -18,6 +18,8 @@
 
 #include "header.h"
 
-bool canJump(vector<int>& nums) {
+bool CanJump (vector <int> & nums) {
+	bool temp = false;
 
+	return temp;
 }

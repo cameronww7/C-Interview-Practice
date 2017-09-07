@@ -118,5 +118,24 @@ int main() {
 							   << " == " << expectedReturn;
 	}
 
+	//Can Jump Program
+	std::cout << "\n\nCan Jump Program";
+	const int myArrayTrue[]  = {2,3,1,1,4};
+	const int myArrayFalse[] = {3,2,1,0,4};
+	vector <int> numStepTrue(myArrayTrue, myArrayTrue +
+									sizeof(myArrayTrue) / sizeof(myArrayTrue[0]));
+	vector <int> numStepFalse(myArrayFalse, myArrayFalse +
+									sizeof(myArrayFalse) / sizeof(myArrayFalse[0]));
+	bool canJumpTrue  = CanJump(numStepTrue);
+	bool canJumpFalse = CanJump(numStepFalse);
+
+	if (canJumpTrue == true && canJumpFalse == false) {
+		std::cout << std::endl << "> Worked : " << canJumpTrue  << " == " << true;
+		std::cout << std::endl << "> Worked : " << canJumpFalse << " == " << false;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : " << canJumpTrue  << " == " << true;
+		std::cout << std::endl << "> Didn't Worked : " << canJumpFalse << " == " << false;
+	}
+
 	return 0;
 }
