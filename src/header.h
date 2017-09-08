@@ -37,6 +37,8 @@ bool CanJump(std::vector <int> & nums);
 
 std::vector <std::string> fizzBuzz(int n);
 
+bool isPowerOfThree(int n);
+
 
 
 #endif /* HEADER_H_ */

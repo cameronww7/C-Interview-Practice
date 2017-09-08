@@ -166,7 +166,7 @@ int main() {
 	std::cout << "\n\nPower Of Three Program";
 	int numberForPower = 9;
 	bool expectReturnForPower = true;
-	bool returnFromPowerOf3 = CountPrimes(numberForPower);
+	bool returnFromPowerOf3 = isPowerOfThree(numberForPower);
 
 	if (returnFromPowerOf3 == expectReturnForPower) {
 		std::cout << std::endl << "> Worked : " << returnFromPowerOf3
