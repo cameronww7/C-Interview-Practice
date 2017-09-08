@@ -9,7 +9,8 @@
 #include <vector>
 #include <string>
 #include <iostream>
-#include <iomanip>
+#include <iomanip> // for setw
+#include <cstdint> // for uint32_t
 using namespace std;
 
 bool   IsPalindrome (std::string xString);
@@ -38,6 +39,8 @@ bool CanJump(std::vector <int> & nums);
 std::vector <std::string> fizzBuzz(int n);
 
 bool isPowerOfThree(int n);
+
+uint32_t reverseBits(uint32_t n);
 
 
 

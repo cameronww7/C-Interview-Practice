@@ -13,5 +13,22 @@
 #include "header.h"
 
 uint32_t reverseBits(uint32_t n) {
+	uint32_t reverseBitStorage = 0;
 
+	reverseBitStorage = reverseBitStorage + (n%2);
+	n = n + (n/2);
+
+	if(n%2 == 0)
+
+	for(int index = 0; index < 32; index++) {
+
+
+		if(n == 0) {
+			reverseBitStorage = reverseBitStorage + 0;
+		}
+	}
+
+
+
+	return reverseBitStorage;
 }

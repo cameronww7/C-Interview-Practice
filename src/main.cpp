@@ -176,6 +176,19 @@ int main() {
 							   << " == " << expectReturnForPower;
 	}
 
+	//Reverse Bits Program
+	std::cout << "\n\nReverse Bits Program";
+	uint32_t expectedReverseBits = 00000010100101000001111010011100;
+	uint32_t returnReverseBits = reverseBits(00111001011110000010100101000000);
+
+	if (returnReverseBits == expectedReverseBits) {
+		std::cout << std::endl << "> Worked : " << returnReverseBits
+							   << " == " << expectedReverseBits;
+	} else {
+		std::cout << std::endl << "> Didn't Work : " << returnReverseBits
+							   << " == " << expectedReverseBits;
+	}
+
 
 	return 0;
 }
