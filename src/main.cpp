@@ -9,7 +9,7 @@ int main() {
 
 	//Palindrome Program
 	std::cout << "\n\nPalindrome Program";
-	string Palindrome = "abcdcba";
+	std::string Palindrome = "abcdcba";
 
 	if (IsPalindrome(Palindrome)) {
 		std::cout << std::endl << "> Worked : Palindrome : " << Palindrome;
@@ -20,7 +20,7 @@ int main() {
 
 	//Longest Palindrome in String Program
 	std::cout << "\n\nLongest Palindrome in String Program";
-	string xString = "abbbbabcbacddsa";
+	std::string xString = "abbbbabcbacddsa";
 	Palindrome = LongestPalindromeInString(xString);
 
 	if (Palindrome == "abcba") {
@@ -57,7 +57,7 @@ int main() {
 	std::cout << "\n\nTwoSum Program";
 	int goalNumber = 9;
 	const int myArray[] = {2,7,11,15};
-	vector<int> myVector (myArray, myArray + sizeof(myArray) / sizeof(myArray[0]));
+	std::vector <int> myVector (myArray, myArray + sizeof(myArray) / sizeof(myArray[0]));
 	myVector = TwoSum(myVector, goalNumber);
 	int theSum = myVector[0] + myVector[1];
 
@@ -122,9 +122,9 @@ int main() {
 	std::cout << "\n\nCan Jump Program";
 	const int myArrayTrue[]  = {2,3,1,1,4};
 	const int myArrayFalse[] = {3,2,1,0,4};
-	vector <int> numStepTrue(myArrayTrue, myArrayTrue +
+	std::vector <int> numStepTrue(myArrayTrue, myArrayTrue +
 									sizeof(myArrayTrue) / sizeof(myArrayTrue[0]));
-	vector <int> numStepFalse(myArrayFalse, myArrayFalse +
+	std::vector <int> numStepFalse(myArrayFalse, myArrayFalse +
 									sizeof(myArrayFalse) / sizeof(myArrayFalse[0]));
 	bool canJumpTrue  = CanJump(numStepTrue);
 	bool canJumpFalse = CanJump(numStepFalse);
@@ -140,6 +140,27 @@ int main() {
 		std::cout << std::endl << "> Didn't Worked : " << canJumpFalse
 													   << " == " << false;
 	}
+
+	//Fizz Buzz Program
+	std::cout << "\n\nFizz Buzz Program";
+	int fizbizNumb = 15;
+	const std::string myArrayFizBiz[]  = {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8",
+								   "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"};
+	std::vector <string> correctFizBiz(myArrayFizBiz, myArrayFizBiz +
+									sizeof(myArrayFizBiz) / sizeof(myArrayFizBiz[0]));
+	std::vector <std::string> returnFizBiz  = fizzBuzz(fizbizNumb);
+
+	if (correctFizBiz == returnFizBiz) {
+		std::cout << std::endl << "> Worked : ";
+
+	} else {
+		std::cout << std::endl << "> Didn't Worked : ";
+	}
+	for(int index = 0; index < fizbizNumb; index++) {
+		std::cout << std::endl << std::setw(2) << index+1 << " : " << returnFizBiz[index]
+								  << " == "  << correctFizBiz[index];
+	}
+
 
 	return 0;
 }

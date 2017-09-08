@@ -22,7 +22,7 @@ bool CanJump (vector <int> & nums) {
 	bool temp = false;
 
 	int index = 0;
-	cout << endl << index <<  " - " << signed(nums.size()-1);
+//	cout << endl << index <<  " - " << signed(nums.size()-1);
 
 	while(index < signed(nums.size()-1)) {
 		if(nums[index] == 0) {

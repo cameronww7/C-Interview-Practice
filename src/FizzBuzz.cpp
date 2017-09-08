@@ -24,8 +24,23 @@
 #include "header.h"
 
 
-vector <string> fizzBuzz(int n) {
+std::vector <std::string> fizzBuzz(int n) {
+	std::vector <std::string> FizzBuzz;
+	std::string temp;
 
+	FizzBuzz.push_back("1");
 
-
+	for(int index = 2; index <= n; index++) {
+		if((index % 3) == 0 && (index % 5) == 0) {
+			FizzBuzz.push_back("FizzBuzz");
+		} else if((index % 3) == 0) {
+			FizzBuzz.push_back("Fizz");
+		} else if((index % 5) == 0) {
+			FizzBuzz.push_back("Buzz");
+		} else {
+			temp = std::to_string(index);
+			FizzBuzz.push_back(temp);
+		}
+	}
+	return FizzBuzz;
 }

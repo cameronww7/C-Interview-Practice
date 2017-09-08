@@ -9,18 +9,19 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-bool   IsPalindrome (string xString);
+bool   IsPalindrome (std::string xString);
 
 double EuclideanDistance (int xNum);
 
-string RemoveCharFromString (string xString,
+std::string RemoveCharFromString (std::string xString,
 							 char charToBeRemoved);
 
-string LongestPalindromeInString (string xString);
+std::string LongestPalindromeInString (std::string xString);
 
-vector<int> TwoSum (vector<int> & xNumbers,
+std::vector <int> TwoSum (std::vector<int> & xNumbers,
 					int xGoalNumber);
 
 float MedianOfTwoSortedArrays (const int xArrayOne[],
@@ -32,7 +33,9 @@ int ClimbStairs(int numberOfStairs);
 
 int CountPrimes(int numberToBeCounted);
 
-bool CanJump(vector <int> & nums);
+bool CanJump(std::vector <int> & nums);
+
+std::vector <std::string> fizzBuzz(int n);
 
 
 
