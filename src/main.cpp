@@ -162,5 +162,20 @@ int main() {
 	}
 
 
+	//Power Of Three Program
+	std::cout << "\n\nPower Of Three Program";
+	int numberForPower = 9;
+	bool expectReturnForPower = true;
+	bool returnFromPowerOf3 = CountPrimes(numberForPower);
+
+	if (returnFromPowerOf3 == expectReturnForPower) {
+		std::cout << std::endl << "> Worked : " << returnFromPowerOf3
+							   << " == " << expectReturnForPower;
+	} else {
+		std::cout << std::endl << "> Didn't Work : " << returnFromPowerOf3
+							   << " == " << expectReturnForPower;
+	}
+
+
 	return 0;
 }

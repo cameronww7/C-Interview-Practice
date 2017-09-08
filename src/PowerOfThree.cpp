@@ -12,5 +12,11 @@
 #include "header.h"
 
 bool isPowerOfThree(int n) {
+	bool isPOf3 = false;
 
+	if ((n % 3) == 0) {
+		isPOf3 = true;
+	}
+
+	return isPOf3;
 }
