@@ -15,20 +15,9 @@
 uint32_t reverseBits(uint32_t n) {
 	uint32_t reverseBitStorage = 0;
 
-	reverseBitStorage = reverseBitStorage + (n%2);
-	n = n + (n/2);
+    for(int bitLocation = 0; bitLocation < 32; bitLocation++) {
+    	reverseBitStorage = (reverseBitStorage << 1) + ( n >> bitLocation & 1);
+    }
 
-	if(n%2 == 0)
-
-	for(int index = 0; index < 32; index++) {
-
-
-		if(n == 0) {
-			reverseBitStorage = reverseBitStorage + 0;
-		}
-	}
-
-
-
-	return reverseBitStorage;
+    return reverseBitStorage;
 }
