@@ -11,6 +11,12 @@
 
 #include "header.h"
 
-string ReverseString() {
+std::string ReverseString(std::string xInString) {
+	std::string returnString = "";
 
+	for(int index = xInString.length()-1; index >= 0; index--) {
+		returnString = returnString + xInString[index];
+	}
+
+	return returnString;
 }

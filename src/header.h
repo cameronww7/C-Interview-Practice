@@ -44,6 +44,8 @@ uint32_t reverseBits(uint32_t n);
 
 int ReverseInt(int x);
 
+std::string ReverseString(std::string xInString);
+
 
 
 #endif /* HEADER_H_ */
