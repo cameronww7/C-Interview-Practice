@@ -189,6 +189,20 @@ int main() {
 							   << " == " << expectedReverseBits;
 	}
 
+	//Reverse Int Program
+	std::cout << "\n\nReverse Int Program";
+	uint32_t expectedReverseInt = 321;
+	uint32_t returnReverseInt = reverseBits(123);
+
+	if (returnReverseInt == expectedReverseInt) {
+		std::cout << std::endl << "> Worked : " << returnReverseInt
+							   << " == " << expectedReverseInt;
+	} else {
+		std::cout << std::endl << "> Didn't Work : " << returnReverseInt
+							   << " == " << expectedReverseInt;
+	}
+
+
 
 	return 0;
 }

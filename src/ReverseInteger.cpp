@@ -15,7 +15,12 @@
 
 #include "header.h"
 
-int reverse(int x) {
+int ReverseInt(int x) {
+	int reverseInteger = 0;
 
+	for(int index = 0; index < x; index++) {
 
+	}
+
+	return reverseInteger;
 }
