@@ -9,6 +9,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm> // for std::sort
 #include <iomanip> // for setw
 #include <cstdint> // for uint32_t
 using namespace std;
@@ -45,6 +46,8 @@ uint32_t reverseBits(uint32_t n);
 int ReverseInt(int x);
 
 std::string ReverseString(std::string xInString);
+
+int SingleNumber(vector<int>& nums);
 
 
 

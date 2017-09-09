@@ -13,6 +13,15 @@
 
 #include "header.h"
 
-int singleNumber(vector<int>& nums) {
+int SingleNumber(vector<int>& nums) {
+	int returnInteger = 0;
+	std::sort (nums.begin(), nums.end());
 
+	for(int index = 0; index < signed(nums.size()); index = index + 2) {
+		if(nums[index] != nums[index + 1]) {
+			returnInteger = nums[index];
+		}
+	}
+
+	return returnInteger;
 }

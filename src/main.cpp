@@ -215,7 +215,21 @@ int main() {
 							   << " == " << expectedReverseStrng;
 	}
 
+	//Single Number Program
+	std::cout << "\n\nSingle Number Program";
+	int expectedOutNum = 5;
+	const int inputArray[] = {3,2,3,1,5,4,1,2,4};
+	std::vector <int> inputVector(inputArray, inputArray +
+									sizeof(inputArray) / sizeof(inputArray[0]));
+	int returnNum = SingleNumber(inputVector);
 
+	if (returnNum == expectedOutNum) {
+		std::cout << std::endl << "> Worked : " << returnNum
+				  	  	  	  	  	  << " == " << expectedOutNum;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : " << returnNum
+										     << " == " << expectedOutNum;
+	}
 
 	return 0;
 }
