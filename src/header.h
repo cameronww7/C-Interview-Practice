@@ -42,6 +42,8 @@ bool isPowerOfThree(int n);
 
 uint32_t reverseBits(uint32_t n);
 
+int ReverseInt(int x);
+
 
 
 #endif /* HEADER_H_ */

@@ -192,7 +192,7 @@ int main() {
 	//Reverse Int Program
 	std::cout << "\n\nReverse Int Program";
 	uint32_t expectedReverseInt = 321;
-	uint32_t returnReverseInt = reverseBits(123);
+	uint32_t returnReverseInt = ReverseInt(123);
 
 	if (returnReverseInt == expectedReverseInt) {
 		std::cout << std::endl << "> Worked : " << returnReverseInt

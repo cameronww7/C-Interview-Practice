@@ -18,8 +18,14 @@
 int ReverseInt(int x) {
 	int reverseInteger = 0;
 
-	for(int index = 0; index < x; index++) {
-
+	while (x) {
+		int temp = reverseInteger * 10 + (x % 10);
+		if (temp / 10 != reverseInteger) {
+			reverseInteger = 0;
+			break;
+		}
+		reverseInteger = temp;
+		x = x / 10;
 	}
 
 	return reverseInteger;
