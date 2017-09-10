@@ -231,5 +231,19 @@ int main() {
 										     << " == " << expectedOutNum;
 	}
 
+	//Unique Paths Program
+	std::cout << "\n\nUnique Paths Program";
+	int expectedUnquiePath= 5;
+
+	int returnUniquePath = UniquePaths(1,2);
+
+	if (returnUniquePath == expectedUnquiePath) {
+		std::cout << std::endl << "> Worked : " << returnUniquePath
+				  	  	  	  	  	  << " == " << expectedUnquiePath;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : " << returnUniquePath
+										     << " == " << expectedUnquiePath;
+	}
+
 	return 0;
 }

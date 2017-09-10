@@ -49,6 +49,8 @@ std::string ReverseString(std::string xInString);
 
 int SingleNumber(vector<int>& nums);
 
+int UniquePaths(int m, int n);
+
 
 
 #endif /* HEADER_H_ */
