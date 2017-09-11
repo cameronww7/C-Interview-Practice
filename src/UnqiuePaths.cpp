@@ -18,9 +18,17 @@
 
 #include "header.h"
 
-int UniquePaths(int m, int n) {
+
+int UniquePaths(int xRowSize, int xColSize) {
 	int temp = 0;
 
+	int theGrid[xRowSize][xColSize];
+
+	for(int rows = 0; rows < xRowSize; rows++) {
+		for(int cols = 0; cols < xColSize; cols++) {
+			theGrid[rows][cols] = 0;
+		}
+	}
 
 
 	return temp;
