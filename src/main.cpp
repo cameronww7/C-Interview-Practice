@@ -24,10 +24,11 @@ int main() {
 	Palindrome = LongestPalindromeInString(xString);
 
 	if (Palindrome == "abcba") {
-		std::cout << std::endl << "> Worked : Longest Palindrome : " << Palindrome;
+		std::cout << std::endl << "> Worked : Longest Palindrome : "
+													<< Palindrome;
 	} else {
 		std::cout << std::endl << "> Didn't Work : No Palindrome in String : "
-																	 << Palindrome;
+													<< Palindrome;
 	}
 
 
@@ -57,16 +58,18 @@ int main() {
 	std::cout << "\n\nTwoSum Program";
 	int goalNumber = 9;
 	const int myArray[] = {2,7,11,15};
-	std::vector <int> myVector (myArray, myArray + sizeof(myArray) / sizeof(myArray[0]));
+	std::vector <int> myVector (myArray, myArray +
+									sizeof(myArray) / sizeof(myArray[0]));
 	myVector = TwoSum(myVector, goalNumber);
 	int theSum = myVector[0] + myVector[1];
 
 	if (theSum == goalNumber) {
-		std::cout << std::endl << "> Worked : " << theSum << " == " << goalNumber
+		std::cout << std::endl << "> Worked : " << theSum << " == "
+				  << goalNumber
 				  << " : "<< myVector[0] << " + " << myVector[1];
 	} else {
-		std::cout << std::endl << "> Didn't Work : " << theSum << " == " << goalNumber
-				  << " : "<< myVector[0] << " + " << myVector[1];
+		std::cout << std::endl << "> Didn't Work : " << theSum << " == "
+				  << goalNumber << " : "<< myVector[0] << " + " << myVector[1];
 	}
 
 
@@ -123,9 +126,9 @@ int main() {
 	const int myArrayTrue[]  = {2,3,1,1,4};
 	const int myArrayFalse[] = {3,2,1,0,4};
 	std::vector <int> numStepTrue(myArrayTrue, myArrayTrue +
-									sizeof(myArrayTrue) / sizeof(myArrayTrue[0]));
+								sizeof(myArrayTrue) / sizeof(myArrayTrue[0]));
 	std::vector <int> numStepFalse(myArrayFalse, myArrayFalse +
-									sizeof(myArrayFalse) / sizeof(myArrayFalse[0]));
+								sizeof(myArrayFalse) / sizeof(myArrayFalse[0]));
 	bool canJumpTrue  = CanJump(numStepTrue);
 	bool canJumpFalse = CanJump(numStepFalse);
 
@@ -144,10 +147,11 @@ int main() {
 	//Fizz Buzz Program
 	std::cout << "\n\nFizz Buzz Program";
 	int fizbizNumb = 15;
-	const std::string myArrayFizBiz[]  = {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8",
-								   "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"};
+	const std::string myArrayFizBiz[]  = {"1", "2", "Fizz", "4", "Buzz",
+										  "Fizz", "7", "8", "Fizz", "Buzz",
+										  "11", "Fizz", "13", "14", "FizzBuzz"};
 	std::vector <string> correctFizBiz(myArrayFizBiz, myArrayFizBiz +
-									sizeof(myArrayFizBiz) / sizeof(myArrayFizBiz[0]));
+							sizeof(myArrayFizBiz) / sizeof(myArrayFizBiz[0]));
 	std::vector <std::string> returnFizBiz  = fizzBuzz(fizbizNumb);
 
 	if (correctFizBiz == returnFizBiz) {
@@ -157,8 +161,8 @@ int main() {
 		std::cout << std::endl << "> Didn't Worked : ";
 	}
 	for(int index = 0; index < fizbizNumb; index++) {
-		std::cout << std::endl << std::setw(2) << index+1 << " : " << returnFizBiz[index]
-								  << " == "  << correctFizBiz[index];
+		std::cout << std::endl << std::setw(2) << index+1 << " : "
+				  << returnFizBiz[index] << " == "  << correctFizBiz[index];
 	}
 
 
@@ -274,6 +278,23 @@ int main() {
 		std::cout << std::endl << "> Didn't Worked : "
 										<< returnHK_BasicDataType
 										<< " == " << expectedHK_BasicDataTypes;
+	}
+
+
+	//HK_ input And Output Program
+	std::cout << "\n\nHK_ input And Output Program";
+
+	int returnHK_inputAndOutput = HK_inputAndOutput(2,3,4);
+
+	int expectedHK_inputAndOutput = 9;
+
+	if (returnHK_inputAndOutput == expectedHK_inputAndOutput) {
+		std::cout << std::endl << "> Worked : " << returnHK_inputAndOutput
+				  	  	  	  	  	  << " == " << expectedHK_inputAndOutput;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_inputAndOutput
+										<< " == " << expectedHK_inputAndOutput;
 	}
 
 

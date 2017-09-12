@@ -62,5 +62,7 @@ std::string HK_BasicDataTypes(const int    & integerNum,
 							  const float  & floatNum,
 							  const double & doubleNum);
 
+int HK_inputAndOutput (int num1, int num2, int num3);
+
 
 #endif /* HEADER_H_ */
