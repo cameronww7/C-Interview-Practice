@@ -64,5 +64,7 @@ std::string HK_BasicDataTypes(const int    & integerNum,
 
 int HK_inputAndOutput (int num1, int num2, int num3);
 
+std::string HK_ConditionalStatement(int num);
+
 
 #endif /* HEADER_H_ */

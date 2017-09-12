@@ -297,6 +297,22 @@ int main() {
 										<< " == " << expectedHK_inputAndOutput;
 	}
 
+	//HK_ConditionalStatement Program
+	std::cout << "\n\nHK_ConditionalStatement Program";
+
+	std::string returnHK_CondiSM = HK_ConditionalStatement(5);
+
+	std::string expectedHK_CondiSM  = "five";
+
+	if (returnHK_CondiSM == expectedHK_CondiSM) {
+		std::cout << std::endl << "> Worked : " << returnHK_CondiSM
+				  	  	  	  	  	  << " == " << expectedHK_CondiSM;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_CondiSM
+										<< " == " << expectedHK_CondiSM;
+	}
+
 
 	return 0;
 }
