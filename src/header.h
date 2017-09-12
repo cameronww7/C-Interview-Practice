@@ -68,5 +68,7 @@ std::string HK_ConditionalStatement(int num);
 
 int * HK_ArrayIntro (int arry[], const int HR_ARRAY_INTRO_SIZE);
 
+std::string HK_ForLoop (int num1, int num2);
+
 
 #endif /* HEADER_H_ */

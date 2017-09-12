@@ -343,5 +343,22 @@ int main() {
 				  << expectedHK_ArrayIntro[index];
 	}
 
+
+	//HK_ For Loop Program
+	std::cout << "\n\nHK_ For Loop Program";
+
+	std::string returnHK_ForLoop = HK_ForLoop(5,2);
+
+	std::string expectedHK_ForLoop  = "five";
+
+	if (returnHK_ForLoop == expectedHK_ForLoop) {
+		std::cout << std::endl << "> Worked : " << returnHK_ForLoop
+				  	  	  	  	  	  << " == " << expectedHK_ForLoop;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_ForLoop
+										<< " == " << expectedHK_ForLoop;
+	}
+
 	return 0;
 }
