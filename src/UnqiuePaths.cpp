@@ -20,16 +20,21 @@
 
 
 int UniquePaths(int xRowSize, int xColSize) {
-	int temp = 0;
+	int numberOfPaths = 0;
 
 	int theGrid[xRowSize][xColSize];
 
-	for(int rows = 0; rows < xRowSize; rows++) {
-		for(int cols = 0; cols < xColSize; cols++) {
-			theGrid[rows][cols] = 0;
+	for(int row = 0; row < xRowSize; row++) {
+		for(int col = 0; col < xColSize; col++) {
+			theGrid[row][col] = 0;
 		}
 	}
 
+	for(int row = 0; row < xRowSize; row++) {
 
-	return temp;
+	}
+
+
+
+	return numberOfPaths;
 }

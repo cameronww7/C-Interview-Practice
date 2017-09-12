@@ -19,12 +19,12 @@ bool   IsPalindrome (std::string xString);
 double EuclideanDistance (int xNum);
 
 std::string RemoveCharFromString (std::string xString,
-							 char charToBeRemoved);
+							      char charToBeRemoved);
 
 std::string LongestPalindromeInString (std::string xString);
 
 std::vector <int> TwoSum (std::vector<int> & xNumbers,
-					int xGoalNumber);
+					      int xGoalNumber);
 
 float MedianOfTwoSortedArrays (const int xArrayOne[],
 							   const int xArrayTwo[],
@@ -49,8 +49,8 @@ std::string ReverseString(std::string xInString);
 
 int SingleNumber(vector<int>& nums);
 
-int UniquePaths(int m, int n);
-
+int UniquePaths(int xRowSize,
+			    int xColSize);
 
 
 #endif /* HEADER_H_ */
