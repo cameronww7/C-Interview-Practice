@@ -43,6 +43,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry excluding="In Progress" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Hacker Rank Programs"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Hacker Rank Programs/In Progress"/>
+						<entry excluding="In Progress" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mini Programs"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mini Programs/In Progress"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
@@ -91,6 +95,10 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
+						<entry excluding="In Progress" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Hacker Rank Programs"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Hacker Rank Programs/In Progress"/>
+						<entry excluding="In Progress" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mini Programs"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mini Programs/In Progress"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
