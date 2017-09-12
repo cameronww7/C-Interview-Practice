@@ -349,7 +349,7 @@ int main() {
 
 	std::string returnHK_ForLoop = HK_ForLoop(5,2);
 
-	std::string expectedHK_ForLoop  = "five";
+	std::string expectedHK_ForLoop  = "five\nodd\ntwo\neven\n";
 
 	if (returnHK_ForLoop == expectedHK_ForLoop) {
 		std::cout << std::endl << "> Worked : " << returnHK_ForLoop

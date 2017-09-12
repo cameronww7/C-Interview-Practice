@@ -16,7 +16,7 @@
  * 			Else if n > 9 and it is an odd number, then print "odd".
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
 //return string, put all output into a string and return string to be compared
 std::string HK_ForLoop (int num1, int num2) {
@@ -26,30 +26,31 @@ std::string HK_ForLoop (int num1, int num2) {
 
 	do {
 		if (temp == 1) {
-			returnString = "one";
+			returnString = returnString + "one\nodd";
 		} else if (temp == 2) {
-			returnString = "two";
+			returnString = returnString + "two\neven";
 		} else if (temp == 3) {
-			returnString = "three";
+			returnString = returnString + "three\nodd";
 		} else if (temp == 4) {
-			returnString = "four";
+			returnString = returnString + "four\neven";
 		} else if (temp == 5) {
-			returnString = "five";
+			returnString = returnString + "five\nodd";
 		} else if (temp == 6) {
-			returnString = "six";
+			returnString = returnString + "six\neven";
 		} else if (temp == 7) {
-			returnString = "seven";
+			returnString = returnString + "seven\nodd";
 		} else if (temp == 8) {
-			returnString = "eight";
+			returnString = returnString + "eight\neven";
 		} else if (temp == 9) {
-			returnString = "nine";
+			returnString = returnString + "nine\nodd";
 		} else if (temp >= 10) {
-			returnString = "Greater Than 9";
+			returnString = returnString + "Greater Than 9";
 		} else {
 			returnString = "Error";
 		}
 		temp = num2;
 		numberOfIntegers++;
+		returnString = returnString + "\n";
 	} while (numberOfIntegers <= 2);
 
 	return returnString;
