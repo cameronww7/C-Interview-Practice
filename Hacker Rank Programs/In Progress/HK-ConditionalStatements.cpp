@@ -9,7 +9,7 @@
  * 			If n > 9, print Greater than 9.
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 std::string HK_ConditionalStatement(int num) {
 

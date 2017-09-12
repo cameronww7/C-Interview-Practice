@@ -38,7 +38,7 @@
  *		address these problems?
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 void gameOfLife(vector<vector<int>>& board) {
 

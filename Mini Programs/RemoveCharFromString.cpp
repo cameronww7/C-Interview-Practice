@@ -6,7 +6,7 @@
  *			A character is to be removed from a string.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 #include <algorithm>
 #include <string>
 

@@ -25,7 +25,7 @@
  *
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 void update(int *a, int *b) {
     // Complete this function

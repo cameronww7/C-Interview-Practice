@@ -16,7 +16,7 @@
  *			Note: m and n will be at most 100.
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 
 int UniquePaths(int xRowSize, int xColSize) {

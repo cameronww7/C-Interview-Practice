@@ -16,7 +16,7 @@
  * 			Else if n > 9 and it is an odd number, then print "odd".
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 //return string, put all output into a string and return string to be compared
 std::string HK_ForLoop () {

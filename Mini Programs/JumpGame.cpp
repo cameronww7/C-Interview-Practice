@@ -16,7 +16,7 @@
  *			A = [3,2,1,0,4], return false.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 bool CanJump (vector <int> & nums) {
 	bool temp = false;

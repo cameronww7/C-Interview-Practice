@@ -6,7 +6,7 @@
  *			Find out if the passed in string is a Palindrome.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 #include <string>
 
 bool IsPalindrome (string xStringInput) {

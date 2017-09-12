@@ -10,7 +10,7 @@
  *			(represented in binary as 00111001011110000010100101000000).
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 uint32_t reverseBits(uint32_t n) {
 	uint32_t reverseBitStorage = 0;

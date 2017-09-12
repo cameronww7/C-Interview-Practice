@@ -11,7 +11,7 @@
  *		implement it without using extra memory?
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 int SingleNumber(vector<int>& nums) {
 	int returnInteger = 0;

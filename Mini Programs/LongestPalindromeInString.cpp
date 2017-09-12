@@ -7,7 +7,7 @@
  *			one max length Palindrome.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 string LongestPalindromeInString (string xStringInput) {
 

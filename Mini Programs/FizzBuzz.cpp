@@ -21,7 +21,7 @@
  *   	  "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"]
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 
 std::vector <std::string> fizzBuzz(int n) {

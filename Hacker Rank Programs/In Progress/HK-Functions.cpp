@@ -9,7 +9,7 @@
  * 			PS: I/O will be automatically handled.
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 int HK_Functions(int intA,
 				 int intB,

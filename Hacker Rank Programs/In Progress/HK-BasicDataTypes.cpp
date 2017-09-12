@@ -23,7 +23,7 @@
  *************************************************************************/
 
 
-#include "header.h"
+#include "../../src/header.h"
 
 
 void HK_BasicDataTypes(int    integerNum,

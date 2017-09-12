@@ -15,9 +15,9 @@
  *
  *************************************************************************/
 
-#include "header.h"
+#include "../../src/header.h"
 
 
-void HK_ArrayIntro (int & array[]) {
+void HK_ArrayIntro () {
 
 }

@@ -12,7 +12,7 @@
  *			Note: Given n will be a positive integer.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 namespace {
 int Climb_Stairs(int stepCount, int numberOfStairs) {

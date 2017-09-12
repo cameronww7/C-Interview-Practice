@@ -9,7 +9,7 @@
  *			Given s = "hello", return "olleh".
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 std::string ReverseString(std::string xInString) {
 	std::string returnString = "";

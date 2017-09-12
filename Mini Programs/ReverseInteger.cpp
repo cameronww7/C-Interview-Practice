@@ -13,7 +13,7 @@
  *			function should return 0 when the reversed integer overflows.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 int ReverseInt(int x) {
 	int reverseInteger = 0;

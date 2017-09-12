@@ -9,7 +9,7 @@
  *		Could you do it without using any loop / recursion?
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 bool isPowerOfThree(int n) {
 	bool isPOf3 = false;

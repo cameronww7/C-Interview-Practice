@@ -8,7 +8,7 @@
  * 			Find the median of the two sorted arrays.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 float MedianOfTwoSortedArrays (const int xArrayOne[], const int xArrayTwo[], const int ARR_SIZE_ONE, const int ARR_SIZE_TWO) {
 	float median = -1;

@@ -23,5 +23,8 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Hacker\ Rank\ Programs/In\ Progress \
+Mini\ Programs \
+Mini\ Programs/In\ Progress \
 src \
 

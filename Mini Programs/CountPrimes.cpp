@@ -7,7 +7,7 @@
  * 			number, n.
  *************************************************************************/
 
-#include "header.h"
+#include "../src/header.h"
 
 namespace {
 	bool isAPrimeNumber(int n) {
