@@ -12,24 +12,38 @@
  * 			places.
  *
  * 			Sample Input
- * 			3 12345678912345 a 334.23 14049.30493
+ * 			3 12345678912345 a 334.239990 14049.30493
  *
  * 			Sample OutPut
  * 			3
  *			12345678912345
  *			a
- *			334.230
+ *			334.239990
  *			14049.304930000
  *************************************************************************/
 
-
 #include "../../src/header.h"
 
+std::string HK_BasicDataTypes(const int    & integerNum,
+							  const long   & longNum,
+							  const char   & charChar,
+							  const float  & floatNum,
+							  const double & doubleNum) {
+//Output To Console
+//	cin >> integerNum;
+//	cin >> longNum;
+//	cin >> charChar;
+//	cin >> floatNum;
+//	cin >> doubleNum;
 
-void HK_BasicDataTypes(int    integerNum,
-					   long   longNum,
-					   char   charChar,
-					   float  floatNum,
-					   double doubleNum) {
+//	cout << std::endl << integerNum;
+//	cout << std::endl << fixed << longNum;
+//	cout << std::endl << charChar;
+//	cout << std::endl << fixed << floatNum;
+//	cout << std::endl << fixed << doubleNum;
 
+	std::string returnString = std::to_string(integerNum) + " " + std::to_string(longNum)
+							   + " " + charChar + " " + std::to_string(floatNum)
+							   + " " + std::to_string(doubleNum);
+	return returnString;
 }

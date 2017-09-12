@@ -52,5 +52,15 @@ int SingleNumber(vector<int>& nums);
 int UniquePaths(int xRowSize,
 			    int xColSize);
 
+/****************************************************************************
+ * 							Hacker Rank Programs
+ ****************************************************************************/
+
+std::string HK_BasicDataTypes(const int    & integerNum,
+							  const long   & longNum,
+							  const char   & charChar,
+							  const float  & floatNum,
+							  const double & doubleNum);
+
 
 #endif /* HEADER_H_ */

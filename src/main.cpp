@@ -245,5 +245,37 @@ int main() {
 										     << " == " << expectedUnquiePath;
 	}
 
+
+/****************************************************************************
+ * 							Hacker Rank Programs
+ ****************************************************************************/
+
+	//HK_ Basic Data Types Program
+	std::cout << "\n\nHK_ Basic DataT ypes Program";
+	const int    integerNum = 3;
+	const long   longNum	= 12345678912345;
+	const char   charChar 	= 'a';
+	const float  floatNum 	= 334.239990;
+	const double doubleNum 	= 14049.30493;
+
+	std::string returnHK_BasicDataType = HK_BasicDataTypes(integerNum,
+			     	 	 	 	 	 	 	 	 	 	   longNum,
+														   charChar,
+														   floatNum,
+														   doubleNum);
+
+	std::string expectedHK_BasicDataTypes
+									= "3 12345678912345 a 334.239990 14049.304930";
+
+	if (returnHK_BasicDataType == expectedHK_BasicDataTypes) {
+		std::cout << std::endl << "> Worked : " << returnHK_BasicDataType
+				  	  	  	  	  	  << " == " << expectedHK_BasicDataTypes;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_BasicDataType
+										<< " == " << expectedHK_BasicDataTypes;
+	}
+
+
 	return 0;
 }
