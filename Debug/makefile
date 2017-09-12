@@ -12,6 +12,7 @@ RM := rm -rf
 -include Mini\ Programs/In\ Progress/subdir.mk
 -include Mini\ Programs/subdir.mk
 -include Hacker\ Rank\ Programs/In\ Progress/subdir.mk
+-include Hacker\ Rank\ Programs/subdir.mk
 -include subdir.mk
 -include objects.mk
 
