@@ -66,5 +66,7 @@ int HK_inputAndOutput (int num1, int num2, int num3);
 
 std::string HK_ConditionalStatement(int num);
 
+int * HK_ArrayIntro (int arry[], const int HR_ARRAY_INTRO_SIZE);
+
 
 #endif /* HEADER_H_ */

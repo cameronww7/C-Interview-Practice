@@ -298,7 +298,7 @@ int main() {
 	}
 
 	//HK_ConditionalStatement Program
-	std::cout << "\n\nHK_ConditionalStatement Program";
+	std::cout << "\n\nHK_ Conditional Statement Program";
 
 	std::string returnHK_CondiSM = HK_ConditionalStatement(5);
 
@@ -313,6 +313,35 @@ int main() {
 										<< " == " << expectedHK_CondiSM;
 	}
 
+	//HK_ Array Intro Program
+	std::cout << "\n\nHK_ Array Intro Program";
+
+	const int HR_ARRAY_INTRO_SIZE = 4;
+	bool checkIfSame = true;
+
+	int myHK_ArrayIntro[HR_ARRAY_INTRO_SIZE] = {1,4,3,2};
+
+	int * returnHK_ArrayIntro = HK_ArrayIntro(myHK_ArrayIntro, HR_ARRAY_INTRO_SIZE);
+
+	int expectedHK_ArrayIntro[HR_ARRAY_INTRO_SIZE]  = {2,3,4,1};
+
+	for (int index = 0; index < HR_ARRAY_INTRO_SIZE; index++) {
+		if(returnHK_ArrayIntro[index] != expectedHK_ArrayIntro[index]) {
+			checkIfSame = false;
+		}
+	}
+
+	if (checkIfSame) {
+		std::cout << std::endl << "> Worked : ";
+	} else {
+		std::cout << std::endl << "> Didn't Worked : ";
+	}
+
+	for (int index = 0; index < HR_ARRAY_INTRO_SIZE; index++) {
+		std::cout << std:: endl;
+		std::cout << returnHK_ArrayIntro[index] << " == "
+				  << expectedHK_ArrayIntro[index];
+	}
 
 	return 0;
 }
