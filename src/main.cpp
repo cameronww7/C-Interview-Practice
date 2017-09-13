@@ -408,17 +408,20 @@ int main() {
 	//HK_StringStream Program
 	std::cout << "\n\nHK_StringStream Program";
 
-	std::string returnHK_StringStream = HK_StringStream("");
+	std::stringstream returnHK_StringStream = HK_StringStream(23,4,56);
 
-	std::string expectedHK_StringStream  = "";
+	std::stringstream expectedHK_StringStream;
+	std::string stringForHK_StringStream = "23\n4\n56";
 
-	if (returnHK_StringStream == expectedHK_StringStream) {
-		std::cout << std::endl << "> Worked : " << returnHK_StringStream
-				  	  	  	  	  	  << " == " << expectedHK_StringStream;
+	expectedHK_StringStream << stringForHK_StringStream;
+
+	if (returnHK_StringStream.str() == expectedHK_StringStream.str()) {
+		std::cout << std::endl << "> Worked : " << returnHK_StringStream.str()
+				  	  	  	  	  	  << " == " << expectedHK_StringStream.str();
 	} else {
 		std::cout << std::endl << "> Didn't Worked : "
-										<< returnHK_StringStream
-										<< " == " << expectedHK_StringStream;
+										<< returnHK_StringStream.str()
+										<< " == " << expectedHK_StringStream.str();
 	}
 
 	return 0;

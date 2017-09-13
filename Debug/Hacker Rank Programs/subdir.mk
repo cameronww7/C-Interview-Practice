@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../Hacker\ Rank\ Programs/HK-ForLoop.cpp \
 ../Hacker\ Rank\ Programs/HK-Functions.cpp \
 ../Hacker\ Rank\ Programs/HK-InputAndOutput.cpp \
+../Hacker\ Rank\ Programs/HK-StringStream.cpp \
 ../Hacker\ Rank\ Programs/HK-Strings.cpp \
 ../Hacker\ Rank\ Programs/HK-Structs.cpp 
 
@@ -20,6 +21,7 @@ OBJS += \
 ./Hacker\ Rank\ Programs/HK-ForLoop.o \
 ./Hacker\ Rank\ Programs/HK-Functions.o \
 ./Hacker\ Rank\ Programs/HK-InputAndOutput.o \
+./Hacker\ Rank\ Programs/HK-StringStream.o \
 ./Hacker\ Rank\ Programs/HK-Strings.o \
 ./Hacker\ Rank\ Programs/HK-Structs.o 
 
@@ -30,6 +32,7 @@ CPP_DEPS += \
 ./Hacker\ Rank\ Programs/HK-ForLoop.d \
 ./Hacker\ Rank\ Programs/HK-Functions.d \
 ./Hacker\ Rank\ Programs/HK-InputAndOutput.d \
+./Hacker\ Rank\ Programs/HK-StringStream.d \
 ./Hacker\ Rank\ Programs/HK-Strings.d \
 ./Hacker\ Rank\ Programs/HK-Structs.d 
 
@@ -74,6 +77,13 @@ Hacker\ Rank\ Programs/HK-InputAndOutput.o: ../Hacker\ Rank\ Programs/HK-InputAn
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/HK-InputAndOutput.d" -MT"Hacker\ Rank\ Programs/HK-InputAndOutput.d" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Hacker\ Rank\ Programs/HK-StringStream.o: ../Hacker\ Rank\ Programs/HK-StringStream.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/HK-StringStream.d" -MT"Hacker\ Rank\ Programs/HK-StringStream.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

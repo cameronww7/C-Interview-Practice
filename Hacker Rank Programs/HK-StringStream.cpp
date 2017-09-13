@@ -23,8 +23,17 @@
  *
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
-std::string HK_StringStream(std::string string1) {
+std::stringstream HK_StringStream(int int1,
+						    	  int int2,
+								  int int3) {
 
+	std::stringstream returnStringStream;
+
+	returnStringStream << int1 << "\n" << int2 << "\n" << int3;
+
+//	std::cout << returnStringStream.str();
+
+	return returnStringStream;
 }

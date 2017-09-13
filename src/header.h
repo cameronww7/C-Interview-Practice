@@ -95,7 +95,9 @@ Student HK_Structs(int 		   xAge,
 std::string HK_Strings(std::string string1,
 					   std::string string2);
 
-std::string HK_StringStream(std::string string1);
+std::stringstream HK_StringStream(int string1,
+						    	  int string2,
+								  int string3);
 
 
 #endif /* HEADER_H_ */
