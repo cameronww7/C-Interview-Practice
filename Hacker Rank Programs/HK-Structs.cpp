@@ -40,11 +40,11 @@
 #include "../src/header.h"
 
 
-Student HK_Structs(int 		   xAge,
-				   int 		   xStandard,
-				   std::string xFirstName,
-				   std::string xLastName) {
-    Student studentOne;
+StructStudent HK_Structs(int 		 xAge,
+				   	     int 		 xStandard,
+				         std::string xFirstName,
+				         std::string xLastName) {
+	StructStudent studentOne;
 
     studentOne.age 		 = xAge;
     studentOne.firstName = xFirstName;

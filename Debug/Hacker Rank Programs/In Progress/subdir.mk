@@ -7,7 +7,6 @@ CPP_SRCS += \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-AbstractClasses-Polymorphism.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-AttributeParser.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-BoxIt!.cpp \
-../Hacker\ Rank\ Programs/In\ Progress/HK-Class.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.cpp \
@@ -19,7 +18,6 @@ OBJS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-AbstractClasses-Polymorphism.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-AttributeParser.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-BoxIt!.o \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Class.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.o \
@@ -31,7 +29,6 @@ CPP_DEPS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-AbstractClasses-Polymorphism.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-AttributeParser.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-BoxIt!.d \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Class.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.d \
@@ -59,13 +56,6 @@ Hacker\ Rank\ Programs/In\ Progress/HK-BoxIt!.o: ../Hacker\ Rank\ Programs/In\ P
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-BoxIt!.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-BoxIt!.d" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
-Hacker\ Rank\ Programs/In\ Progress/HK-Class.o: ../Hacker\ Rank\ Programs/In\ Progress/HK-Class.cpp
-	@echo 'Building file: $<'
-	@echo 'Invoking: Cross G++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-Class.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-Class.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

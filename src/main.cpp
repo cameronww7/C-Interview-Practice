@@ -363,9 +363,9 @@ int main() {
 	//HK_ Functions Program
 	std::cout << "\nHK_ Functions Program";
 
-	Student returnHK_Structs = HK_Structs(15,10,"john","carmack");
+	StructStudent returnHK_Structs = HK_Structs(15,10,"john","carmack");
 
-    Student expectedHK_Structs;
+	StructStudent expectedHK_Structs;
     expectedHK_Structs.age 		 = 15;
     expectedHK_Structs.firstName = "john";
     expectedHK_Structs.lastName  = "carmack";
@@ -422,6 +422,22 @@ int main() {
 		std::cout << std::endl << "> Didn't Worked : "
 										<< returnHK_StringStream.str()
 										<< " == " << expectedHK_StringStream.str();
+	}
+
+	//HK_ Class Program
+	std::cout << "\n\nHK_ Class Program";
+
+	std::string returnHK_Class = HK_Class(15,10,"john","carmack");
+
+	std::string expectedHK_Class  = "15,john,carmack,10";
+
+	if (returnHK_Class == expectedHK_Class) {
+		std::cout << std::endl << "> Worked : " << returnHK_Class
+				  	  	  	  	  	  << " == " << expectedHK_Class;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_Class
+										<< " == " << expectedHK_Class;
 	}
 
 	return 0;

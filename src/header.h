@@ -80,17 +80,17 @@ int HK_Functions(int intA,
 				 int intC,
 				 int intD);
 
-struct Student {
+struct StructStudent {
 	int age;
 	int standard;
 	std::string firstName;
 	std::string lastName;
 };
 
-Student HK_Structs(int 		   xAge,
-				   int 		   xStandard,
-				   std::string xFirstName,
-				   std::string xLastName);
+StructStudent HK_Structs(int 		 xAge,
+				   	     int 		 xStandard,
+				         std::string xFirstName,
+				         std::string xLastName);
 
 std::string HK_Strings(std::string string1,
 					   std::string string2);
@@ -98,6 +98,11 @@ std::string HK_Strings(std::string string1,
 std::stringstream HK_StringStream(int string1,
 						    	  int string2,
 								  int string3);
+
+std::string HK_Class(int 		 xAge,
+  	     	 	 	 int 		 xStandard,
+					 std::string xFirstName,
+					 std::string xLastName);
 
 
 #endif /* HEADER_H_ */
