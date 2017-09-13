@@ -9,10 +9,8 @@ CPP_SRCS += \
 ../Mini\ Programs/EuclideanDistance.cpp \
 ../Mini\ Programs/FizzBuzz.cpp \
 ../Mini\ Programs/JumpGame.cpp \
-../Mini\ Programs/LongestPalindromeInString.cpp \
 ../Mini\ Programs/MedianOfTwoSortedArrays.cpp \
 ../Mini\ Programs/Palindrome.cpp \
-../Mini\ Programs/PascalsTriangle.cpp \
 ../Mini\ Programs/PowerOfThree.cpp \
 ../Mini\ Programs/RemoveCharFromString.cpp \
 ../Mini\ Programs/ReverseBits.cpp \
@@ -27,10 +25,8 @@ OBJS += \
 ./Mini\ Programs/EuclideanDistance.o \
 ./Mini\ Programs/FizzBuzz.o \
 ./Mini\ Programs/JumpGame.o \
-./Mini\ Programs/LongestPalindromeInString.o \
 ./Mini\ Programs/MedianOfTwoSortedArrays.o \
 ./Mini\ Programs/Palindrome.o \
-./Mini\ Programs/PascalsTriangle.o \
 ./Mini\ Programs/PowerOfThree.o \
 ./Mini\ Programs/RemoveCharFromString.o \
 ./Mini\ Programs/ReverseBits.o \
@@ -45,10 +41,8 @@ CPP_DEPS += \
 ./Mini\ Programs/EuclideanDistance.d \
 ./Mini\ Programs/FizzBuzz.d \
 ./Mini\ Programs/JumpGame.d \
-./Mini\ Programs/LongestPalindromeInString.d \
 ./Mini\ Programs/MedianOfTwoSortedArrays.d \
 ./Mini\ Programs/Palindrome.d \
-./Mini\ Programs/PascalsTriangle.d \
 ./Mini\ Programs/PowerOfThree.d \
 ./Mini\ Programs/RemoveCharFromString.d \
 ./Mini\ Programs/ReverseBits.d \
@@ -94,13 +88,6 @@ Mini\ Programs/JumpGame.o: ../Mini\ Programs/JumpGame.cpp
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Mini\ Programs/LongestPalindromeInString.o: ../Mini\ Programs/LongestPalindromeInString.cpp
-	@echo 'Building file: $<'
-	@echo 'Invoking: Cross G++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Mini Programs/LongestPalindromeInString.d" -MT"Mini\ Programs/LongestPalindromeInString.d" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
 Mini\ Programs/MedianOfTwoSortedArrays.o: ../Mini\ Programs/MedianOfTwoSortedArrays.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
@@ -112,13 +99,6 @@ Mini\ Programs/Palindrome.o: ../Mini\ Programs/Palindrome.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Mini Programs/Palindrome.d" -MT"Mini\ Programs/Palindrome.d" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
-Mini\ Programs/PascalsTriangle.o: ../Mini\ Programs/PascalsTriangle.cpp
-	@echo 'Building file: $<'
-	@echo 'Invoking: Cross G++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Mini Programs/PascalsTriangle.d" -MT"Mini\ Programs/PascalsTriangle.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

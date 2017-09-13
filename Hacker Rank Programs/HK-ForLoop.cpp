@@ -19,7 +19,8 @@
 #include "../src/header.h"
 
 //return string, put all output into a string and return string to be compared
-std::string HK_ForLoop (int num1, int num2) {
+std::string HK_ForLoop (int num1,
+					    int num2) {
 	std::string returnString = "";
 	int numberOfIntegers = 1;
 	int temp = num1;

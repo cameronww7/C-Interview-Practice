@@ -79,7 +79,7 @@ int main() {
 	const int ARR_SIZE_TWO = 2;
 	const int myArrayOne[ARR_SIZE_ONE] = {1,2};
 	const int myArrayTwo[ARR_SIZE_TWO] = {3,4};
-	float goalMedian = 2.5;
+	float goalMedian   = 2.5;
 	float returnMedian = MedianOfTwoSortedArrays(myArrayOne, myArrayTwo,
 												 ARR_SIZE_ONE, ARR_SIZE_TWO);
 
@@ -129,8 +129,8 @@ int main() {
 								sizeof(myArrayTrue) / sizeof(myArrayTrue[0]));
 	std::vector <int> numStepFalse(myArrayFalse, myArrayFalse +
 								sizeof(myArrayFalse) / sizeof(myArrayFalse[0]));
-	bool canJumpTrue  = CanJump(numStepTrue);
-	bool canJumpFalse = CanJump(numStepFalse);
+	bool canJumpTrue  = JumpGame(numStepTrue);
+	bool canJumpFalse = JumpGame(numStepFalse);
 
 	if (canJumpTrue == true && canJumpFalse == false) {
 		std::cout << std::endl << "> Worked : " << canJumpTrue
@@ -170,7 +170,7 @@ int main() {
 	std::cout << "\n\nPower Of Three Program";
 	int numberForPower = 9;
 	bool expectReturnForPower = true;
-	bool returnFromPowerOf3 = isPowerOfThree(numberForPower);
+	bool returnFromPowerOf3   = isPowerOfThree(numberForPower);
 
 	if (returnFromPowerOf3 == expectReturnForPower) {
 		std::cout << std::endl << "> Worked : " << returnFromPowerOf3
@@ -183,7 +183,7 @@ int main() {
 	//Reverse Bits Program
 	std::cout << "\n\nReverse Bits Program";
 	uint32_t expectedReverseBits = 964176192;
-	uint32_t returnReverseBits = reverseBits(43261596);
+	uint32_t returnReverseBits   = reverseBits(43261596);
 
 	if (returnReverseBits == expectedReverseBits) {
 		std::cout << std::endl << "> Worked : " << returnReverseBits
@@ -196,7 +196,7 @@ int main() {
 	//Reverse Int Program
 	std::cout << "\n\nReverse Int Program";
 	uint32_t expectedReverseInt = 321;
-	uint32_t returnReverseInt = ReverseInt(123);
+	uint32_t returnReverseInt   = ReverseInt(123);
 
 	if (returnReverseInt == expectedReverseInt) {
 		std::cout << std::endl << "> Worked : " << returnReverseInt

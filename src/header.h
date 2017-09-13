@@ -35,7 +35,7 @@ int ClimbStairs(int numberOfStairs);
 
 int CountPrimes(int numberToBeCounted);
 
-bool CanJump(std::vector <int> & nums);
+bool JumpGame(std::vector <int> & nums);
 
 std::vector <std::string> fizzBuzz(int n);
 
@@ -62,13 +62,17 @@ std::string HK_BasicDataTypes(const int    & integerNum,
 							  const float  & floatNum,
 							  const double & doubleNum);
 
-int HK_inputAndOutput (int num1, int num2, int num3);
+int HK_inputAndOutput (int num1,
+					   int num2,
+					   int num3);
 
 std::string HK_ConditionalStatement(int num);
 
-int * HK_ArrayIntro (int arry[], const int HR_ARRAY_INTRO_SIZE);
+int * HK_ArrayIntro (int arry[],
+			   const int HR_ARRAY_INTRO_SIZE);
 
-std::string HK_ForLoop (int num1, int num2);
+std::string HK_ForLoop (int num1,
+						int num2);
 
 
 #endif /* HEADER_H_ */

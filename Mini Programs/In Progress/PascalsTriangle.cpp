@@ -17,7 +17,7 @@
  *			]
  *************************************************************************/
 
-#include "../src/header.h"
+#include "../../src/header.h"
 
 //vector <vector<int>> generate(int numRows) {
 //

@@ -18,7 +18,7 @@
 
 #include "../src/header.h"
 
-bool CanJump (vector <int> & nums) {
+bool JumpGame (vector <int> & nums) {
 	bool temp = false;
 
 	int index = 0;

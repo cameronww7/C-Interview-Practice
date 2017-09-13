@@ -7,12 +7,10 @@
  *			one max length Palindrome.
  *************************************************************************/
 
-#include "../src/header.h"
+#include "../../src/header.h"
 
-string LongestPalindromeInString (string xStringInput) {
-
-
-	string longestPalindrome;
+std::string LongestPalindromeInString (std::string xStringInput) {
+	std::string longestPalindrome;
 	bool isPalindrome = false;
 	for (unsigned int index = 0; index < (xStringInput.size() / 2); index++) {
 		if(xStringInput[index] == xStringInput[(xStringInput.size() - index - 1)]) {
