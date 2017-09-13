@@ -37,7 +37,7 @@
  *
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
 
 Student HK_Structs(int 		   xAge,
@@ -45,6 +45,7 @@ Student HK_Structs(int 		   xAge,
 				   std::string xFirstName,
 				   std::string xLastName) {
     Student studentOne;
+
     studentOne.age 		 = xAge;
     studentOne.firstName = xFirstName;
     studentOne.lastName  = xLastName;

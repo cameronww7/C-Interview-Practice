@@ -14,7 +14,6 @@ CPP_SRCS += \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-Strings.cpp \
-../Hacker\ Rank\ Programs/In\ Progress/HK-Structs.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-VariableSizeArray.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-VirtualFunctions.cpp 
 
@@ -29,7 +28,6 @@ OBJS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Strings.o \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Structs.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-VariableSizeArray.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-VirtualFunctions.o 
 
@@ -44,7 +42,6 @@ CPP_DEPS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Strings.d \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Structs.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-VariableSizeArray.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-VirtualFunctions.d 
 
@@ -117,13 +114,6 @@ Hacker\ Rank\ Programs/In\ Progress/HK-Strings.o: ../Hacker\ Rank\ Programs/In\ 
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-Strings.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-Strings.d" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
-Hacker\ Rank\ Programs/In\ Progress/HK-Structs.o: ../Hacker\ Rank\ Programs/In\ Progress/HK-Structs.cpp
-	@echo 'Building file: $<'
-	@echo 'Invoking: Cross G++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-Structs.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-Structs.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
