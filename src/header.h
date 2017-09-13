@@ -8,6 +8,7 @@
 
 #include <vector>
 #include <string>
+#include <sstream>  // for String Stream
 #include <iostream>
 #include <algorithm> // for std::sort
 #include <iomanip> // for setw
@@ -93,6 +94,8 @@ Student HK_Structs(int 		   xAge,
 
 std::string HK_Strings(std::string string1,
 					   std::string string2);
+
+std::string HK_StringStream(std::string string1);
 
 
 #endif /* HEADER_H_ */

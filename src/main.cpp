@@ -405,5 +405,21 @@ int main() {
 										<< " == " << expectedHK_Strings;
 	}
 
+	//HK_StringStream Program
+	std::cout << "\n\nHK_StringStream Program";
+
+	std::string returnHK_StringStream = HK_StringStream("");
+
+	std::string expectedHK_StringStream  = "";
+
+	if (returnHK_StringStream == expectedHK_StringStream) {
+		std::cout << std::endl << "> Worked : " << returnHK_StringStream
+				  	  	  	  	  	  << " == " << expectedHK_StringStream;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_StringStream
+										<< " == " << expectedHK_StringStream;
+	}
+
 	return 0;
 }

@@ -24,7 +24,6 @@
  *************************************************************************/
 
 #include "../../src/header.h"
-#include <sstream>
 
 std::string HK_StringStream(std::string string1) {
 
