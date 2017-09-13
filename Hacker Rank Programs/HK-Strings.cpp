@@ -29,20 +29,22 @@
  *
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
 std::string HK_Strings(std::string string1,
 					   std::string string2) {
 	std::string returnString = "";
 
-	std::cout << std::endl << string1.length() << " " << string2.length();
-	std::cout << std::endl << string1 << string2;
-	std::cout << std::endl << string1 << " " << string2;
+//	std::cout << std::endl << string1.length() << " " << string2.length();
+//	std::cout << std::endl << string1 << string2;
+//	std::cout << std::endl << string2[0] << string1.substr(1,3) << " "
+//			               << string1[0] << string2.substr(1,1);
 
 	returnString = std::to_string(string1.length()) + " " +
 				   std::to_string(string2.length()) + "\n" +
 				   string1 + string2 + "\n" +
-				   string1 + " " + string2;
+				   string2[0] + string1.substr(1,3) + " " +
+				   string1[0] + string2.substr(1,1);
 
 	return returnString;
 }
