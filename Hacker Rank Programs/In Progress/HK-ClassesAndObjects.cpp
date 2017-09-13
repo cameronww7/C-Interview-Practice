@@ -60,3 +60,29 @@
  *************************************************************************/
 
 #include "../../src/header.h"
+
+class ClassStudent {
+public:
+	ClassStudent() {mScoreSum = 0;};
+
+	void setScores (int xScores) {mScoreSum = xScores;};
+
+	int getScores () {return mScoreSum;};
+
+	void input() {
+		for(int index = 0; index < 5; index++) {
+			std::cin >> myScrores[index];
+		}
+	};
+
+	int SumScores() {
+		for(int index = 0; index < 5; index++) {
+			mScoreSum = mScoreSum + myScrores[index];
+		}
+	};
+
+
+private:
+	int mScoreSum;
+	int myScrores[5] = {0,0,0,0,0};
+};
