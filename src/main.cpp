@@ -363,18 +363,31 @@ int main() {
 	//HK_ Functions Program
 	std::cout << "\nHK_ Functions Program";
 
-	int returnHK_Functions = HK_Functions(1,2,5,3);
+	Student returnHK_Structs = HK_Structs(15,10,"john","carmack");
 
-	int expectedHK_Functions  = 5;
+    Student expectedHK_Structs;
+    expectedHK_Structs.age 		 = 15;
+    expectedHK_Structs.firstName = "john";
+    expectedHK_Structs.lastName  = "carmack";
+    expectedHK_Structs.standard  = 10;
 
-	if (returnHK_Functions == expectedHK_Functions) {
-		std::cout << std::endl << "> Worked : " << returnHK_Functions
-				  	  	  	  	  	  << " == " << expectedHK_Functions;
+	if (returnHK_Structs.age == expectedHK_Structs.age &&
+		returnHK_Structs.firstName == expectedHK_Structs.firstName &&
+		returnHK_Structs.lastName == expectedHK_Structs.lastName &&
+		returnHK_Structs.standard == expectedHK_Structs.standard) {
+		std::cout << std::endl << "> Worked : ";
 	} else {
-		std::cout << std::endl << "> Didn't Worked : "
-										<< returnHK_Functions
-										<< " == " << expectedHK_Functions;
+		std::cout << std::endl << "> Didn't Worked : ";
 	}
+
+	std::cout << std::endl << returnHK_Structs.age << " == "
+			  << expectedHK_Structs.age;
+	std::cout << std::endl <<returnHK_Structs.firstName << " == "
+			  << expectedHK_Structs.firstName;
+	std::cout << std::endl <<returnHK_Structs.lastName << " == "
+			  << expectedHK_Structs.lastName;
+	std::cout << std::endl <<returnHK_Structs.standard << " == "
+			  << expectedHK_Structs.standard;
 
 	return 0;
 }

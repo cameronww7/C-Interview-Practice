@@ -40,16 +40,25 @@
 #include "../../src/header.h"
 
 
+Student HK_Structs(int 		   xAge,
+				   int 		   xStandard,
+				   std::string xFirstName,
+				   std::string xLastName) {
+    Student studentOne;
+    studentOne.age 		 = xAge;
+    studentOne.firstName = xFirstName;
+    studentOne.lastName  = xLastName;
+    studentOne.standard  = xStandard;
 
-/*
-    add code for struct here.
-*/
-
-void HK_Structs() {
-//    Student st;
+//	std::cin << studentOne.age;
+//	std::cin << studentOne.firstName;
+//	std::cin << studentOne.lastName ;
+//	std::cin << studentOne.standard;
 //
-//    cin >> st.age >> st.first_name >> st.last_name >> st.standard;
-//    cout << st.age << " " << st.first_name << " " << st.last_name << " " << st.standard;
+//	std::cout << std::endl << studentOne.age;
+//	std::cout << std::endl << studentOne.firstName;
+//	std::cout << std::endl << studentOne.lastName ;
+//	std::cout << std::endl << studentOne.standard;
 
-
+    return studentOne;
 }

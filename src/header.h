@@ -79,5 +79,17 @@ int HK_Functions(int intA,
 				 int intC,
 				 int intD);
 
+struct Student {
+	int age;
+	int standard;
+	std::string firstName;
+	std::string lastName;
+};
+
+Student HK_Structs(int 		   xAge,
+				   int 		   xStandard,
+				   std::string xFirstName,
+				   std::string xLastName);
+
 
 #endif /* HEADER_H_ */
