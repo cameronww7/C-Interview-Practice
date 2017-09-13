@@ -79,10 +79,16 @@ public:
 		for(int index = 0; index < 5; index++) {
 			mScoreSum = mScoreSum + myScrores[index];
 		}
+		return mScoreSum;
 	};
-
 
 private:
 	int mScoreSum;
 	int myScrores[5] = {0,0,0,0,0};
 };
+
+int HK_ClassesAndObjects() {
+	int returnInt = 0;
+
+	return returnInt;
+}

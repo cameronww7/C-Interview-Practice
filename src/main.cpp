@@ -440,5 +440,21 @@ int main() {
 										<< " == " << expectedHK_Class;
 	}
 
+	//HK_ Classes And Objects Program
+	std::cout << "\n\nHK_ Classes And Objects Program";
+
+	int returnHK_ClassesAndObjects = HK_ClassesAndObjects();
+
+	int expectedHK_ClassesAndObjects  = 1;
+
+	if (returnHK_ClassesAndObjects == expectedHK_ClassesAndObjects) {
+		std::cout << std::endl << "> Worked : " << returnHK_ClassesAndObjects
+				  	  	  	  	  	  << " == " << expectedHK_ClassesAndObjects;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_ClassesAndObjects
+										<< " == " << expectedHK_ClassesAndObjects;
+	}
+
 	return 0;
 }

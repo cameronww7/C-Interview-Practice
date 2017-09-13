@@ -104,5 +104,7 @@ std::string HK_Class(int 		 xAge,
 					 std::string xFirstName,
 					 std::string xLastName);
 
+int HK_ClassesAndObjects();
+
 
 #endif /* HEADER_H_ */
