@@ -33,5 +33,16 @@
 
 std::string HK_Strings(std::string string1,
 					   std::string string2) {
+	std::string returnString = "";
 
+	std::cout << std::endl << string1.length() << " " << string2.length();
+	std::cout << std::endl << string1 << string2;
+	std::cout << std::endl << string1 << " " << string2;
+
+	returnString = std::to_string(string1.length()) + " " +
+				   std::to_string(string2.length()) + "\n" +
+				   string1 + string2 + "\n" +
+				   string1 + " " + string2;
+
+	return returnString;
 }

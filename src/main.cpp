@@ -389,5 +389,21 @@ int main() {
 	std::cout << std::endl <<returnHK_Structs.standard << " == "
 			  << expectedHK_Structs.standard;
 
+	//HK_ For Loop Program
+	std::cout << "\n\nHK_ For Loop Program";
+
+	std::string returnHK_Strings = HK_Strings("abcd", "ef");
+
+	std::string expectedHK_Strings  = "4 2\nabcdef\nebcd af";
+
+	if (returnHK_Strings == expectedHK_Strings) {
+		std::cout << std::endl << "> Worked : " << returnHK_Strings
+				  	  	  	  	  	  << " == " << expectedHK_Strings;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_Strings
+										<< " == " << expectedHK_Strings;
+	}
+
 	return 0;
 }

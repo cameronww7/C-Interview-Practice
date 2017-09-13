@@ -91,5 +91,8 @@ Student HK_Structs(int 		   xAge,
 				   std::string xFirstName,
 				   std::string xLastName);
 
+std::string HK_Strings(std::string string1,
+					   std::string string2);
+
 
 #endif /* HEADER_H_ */
