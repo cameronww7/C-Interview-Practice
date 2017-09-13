@@ -360,5 +360,21 @@ int main() {
 										<< " == " << expectedHK_ForLoop;
 	}
 
+	//HK_ Functions Program
+	std::cout << "\nHK_ Functions Program";
+
+	int returnHK_Functions = HK_Functions(1,2,5,3);
+
+	int expectedHK_Functions  = 5;
+
+	if (returnHK_Functions == expectedHK_Functions) {
+		std::cout << std::endl << "> Worked : " << returnHK_Functions
+				  	  	  	  	  	  << " == " << expectedHK_Functions;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_Functions
+										<< " == " << expectedHK_Functions;
+	}
+
 	return 0;
 }

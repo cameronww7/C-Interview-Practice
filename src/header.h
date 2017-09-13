@@ -74,5 +74,10 @@ int * HK_ArrayIntro (int arry[],
 std::string HK_ForLoop (int num1,
 						int num2);
 
+int HK_Functions(int intA,
+				 int intB,
+				 int intC,
+				 int intD);
+
 
 #endif /* HEADER_H_ */

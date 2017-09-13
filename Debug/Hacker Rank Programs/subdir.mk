@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../Hacker\ Rank\ Programs/HK-BasicDataTypes.cpp \
 ../Hacker\ Rank\ Programs/HK-ConditionalStatements.cpp \
 ../Hacker\ Rank\ Programs/HK-ForLoop.cpp \
+../Hacker\ Rank\ Programs/HK-Functions.cpp \
 ../Hacker\ Rank\ Programs/HK-InputAndOutput.cpp 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./Hacker\ Rank\ Programs/HK-BasicDataTypes.o \
 ./Hacker\ Rank\ Programs/HK-ConditionalStatements.o \
 ./Hacker\ Rank\ Programs/HK-ForLoop.o \
+./Hacker\ Rank\ Programs/HK-Functions.o \
 ./Hacker\ Rank\ Programs/HK-InputAndOutput.o 
 
 CPP_DEPS += \
@@ -22,6 +24,7 @@ CPP_DEPS += \
 ./Hacker\ Rank\ Programs/HK-BasicDataTypes.d \
 ./Hacker\ Rank\ Programs/HK-ConditionalStatements.d \
 ./Hacker\ Rank\ Programs/HK-ForLoop.d \
+./Hacker\ Rank\ Programs/HK-Functions.d \
 ./Hacker\ Rank\ Programs/HK-InputAndOutput.d 
 
 
@@ -51,6 +54,13 @@ Hacker\ Rank\ Programs/HK-ForLoop.o: ../Hacker\ Rank\ Programs/HK-ForLoop.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/HK-ForLoop.d" -MT"Hacker\ Rank\ Programs/HK-ForLoop.d" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Hacker\ Rank\ Programs/HK-Functions.o: ../Hacker\ Rank\ Programs/HK-Functions.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/HK-Functions.d" -MT"Hacker\ Rank\ Programs/HK-Functions.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

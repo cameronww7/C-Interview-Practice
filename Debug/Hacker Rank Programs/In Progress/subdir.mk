@@ -10,7 +10,6 @@ CPP_SRCS += \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-Class.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.cpp \
-../Hacker\ Rank\ Programs/In\ Progress/HK-Functions.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.cpp \
 ../Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.cpp \
@@ -26,7 +25,6 @@ OBJS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Class.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.o \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Functions.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.o \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.o \
@@ -42,7 +40,6 @@ CPP_DEPS += \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Class.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ClassesAndObjects.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.d \
-./Hacker\ Rank\ Programs/In\ Progress/HK-Functions.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-InheritedCode.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-Pointers.d \
 ./Hacker\ Rank\ Programs/In\ Progress/HK-StringStream.d \
@@ -92,13 +89,6 @@ Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.o: ../Hacker\ Rank\ Pro
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-ExceptionalServer.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-ExceptionalServer.d" -o "$@" "$<"
-	@echo 'Finished building: $<'
-	@echo ' '
-
-Hacker\ Rank\ Programs/In\ Progress/HK-Functions.o: ../Hacker\ Rank\ Programs/In\ Progress/HK-Functions.cpp
-	@echo 'Building file: $<'
-	@echo 'Invoking: Cross G++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Hacker Rank Programs/In Progress/HK-Functions.d" -MT"Hacker\ Rank\ Programs/In\ Progress/HK-Functions.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
