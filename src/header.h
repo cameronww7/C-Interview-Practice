@@ -106,5 +106,7 @@ std::string HK_Class(int 		 xAge,
 
 int HK_ClassesAndObjects();
 
+void HK_VariableSizeArray();
+
 
 #endif /* HEADER_H_ */

@@ -456,5 +456,22 @@ int main() {
 										<< " == " << expectedHK_ClassesAndObjects;
 	}
 
+	//HK_ Variable Size Array Program
+	std::cout << "\n\nHK_ Variable Size Array Program";
+
+	//int returnHK_VariableSizeArray=
+	HK_VariableSizeArray();
+
+	//int expectedHK_VariableSizeArray  = 1;
+
+	if (true == false) {
+		std::cout << std::endl << "> Worked : " << "Dont Know"
+				  	  	  	  	  	  << " == " << "Dont Know";
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< "Dont Know"
+										<< " == " << "Dont Know";
+	}
+
 	return 0;
 }
