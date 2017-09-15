@@ -39,7 +39,7 @@
  *
  * 			Sample Input
  *
- * 			The first line contains , the number of students in Kristen's
+ * 			The first line contains n,n the number of students in Kristen's
  * 			class. The n subsequent lines contain each student's 5 exam grades
  * 			for this semester.
  *
@@ -59,11 +59,11 @@
  *
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
-class ClassStudent {
+class ClassStudentObjects {
 public:
-	ClassStudent() {mScoreSum = 0;};
+	ClassStudentObjects() {mScoreSum = 0;};
 
 	void setScores (int xScores) {mScoreSum = xScores;};
 
@@ -74,6 +74,14 @@ public:
 			std::cin >> myScrores[index];
 		}
 	};
+
+	void inputPassed(int exam1,int exam2,int exam3,int exam4,int exam5) {
+		myScrores[0] = exam1;
+		myScrores[1] = exam2;
+		myScrores[2] = exam3;
+		myScrores[3] = exam4;
+		myScrores[4] = exam5;
+	}
 
 	int SumScores() {
 		for(int index = 0; index < 5; index++) {
@@ -89,6 +97,26 @@ private:
 
 int HK_ClassesAndObjects() {
 	int returnInt = 0;
+
+	int numberOfStudents = 3;
+
+	ClassStudentObjects students[3];
+
+	students[0].inputPassed(30, 40, 45, 10, 10);
+	students[1].inputPassed(40, 40, 40, 10, 10);
+	students[2].inputPassed(50, 20, 30, 10, 10);
+
+	students[0].SumScores();
+	students[1].SumScores();
+	students[2].SumScores();
+
+	if(students[0].getScores() > students[1].getScores()) {
+		if(students[0].getScores() < students[2].getScores()) {
+			returnInt++;
+		}
+	} else if (students[0].getScores() > students[2].getScores()) {
+		returnInt++;
+	}
 
 	return returnInt;
 }

@@ -31,38 +31,38 @@
 #include "../../src/header.h"
 
 void HK_VariableSizeArray() {
-	int rowSize;
-	int colSize;
-
-	std::cin >> rowSize >> colSize;
-
-	int **multiDimArr = new int*[rowSize];
-
-	for (int rowIndex = 0; rowIndex < rowSize; rowIndex++) {
-		int colIn;
-
-		std::cin >> colIn;
-
-		multiDimArr[rowIndex] = new int[colSize];
-
-		for (int cols = 0; cols < colIn; cols++) {
-
-			int input;
-
-			std::cin >> input;
-
-			multiDimArr[rowIndex][cols] = input;
-		}
-	}
-
-	for (int index = 0; index < colSize; index++) {
-		int num1;
-		int num2;
-
-		std::cin >>  num1 >> num2;
-
-		std::cout << multiDimArr[num1][num2] << std::endl;
-	}
+//	int rowSize;
+//	int colSize;
+//
+//	std::cin >> rowSize >> colSize;
+//
+//	int **multiDimArr = new int*[rowSize];
+//
+//	for (int rowIndex = 0; rowIndex < rowSize; rowIndex++) {
+//		int colIn;
+//
+//		std::cin >> colIn;
+//
+//		multiDimArr[rowIndex] = new int[colSize];
+//
+//		for (int cols = 0; cols < colIn; cols++) {
+//
+//			int input;
+//
+//			std::cin >> input;
+//
+//			multiDimArr[rowIndex][cols] = input;
+//		}
+//	}
+//
+//	for (int index = 0; index < colSize; index++) {
+//		int num1;
+//		int num2;
+//
+//		std::cin >>  num1 >> num2;
+//
+//		std::cout << multiDimArr[num1][num2] << std::endl;
+//	}
 }
 
 
