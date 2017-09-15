@@ -104,9 +104,12 @@ std::string HK_Class(int 		 xAge,
 					 std::string xFirstName,
 					 std::string xLastName);
 
+void HK_VariableSizeArray();
+
 int HK_ClassesAndObjects();
 
-void HK_VariableSizeArray();
+std::string HK_Pointers (int a,
+						 int b);
 
 
 #endif /* HEADER_H_ */

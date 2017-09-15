@@ -473,5 +473,21 @@ int main() {
 										<< " == " << "Dont Know";
 	}
 
+	//HK_ Pointers Program
+	std::cout << "\n\nHK_ Pointers Program";
+
+	std::string returnHK_Pointers = HK_Pointers(4,5);
+
+	std::string expectedHK_Pointers  = "9 1";
+
+	if (returnHK_Pointers == expectedHK_Pointers) {
+		std::cout << std::endl << "> Worked : " << returnHK_Pointers
+				  	  	  	  	  	  << " == " << expectedHK_Pointers;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_Pointers
+										<< " == " << expectedHK_Pointers;
+	}
+
 	return 0;
 }

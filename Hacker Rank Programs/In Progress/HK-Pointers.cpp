@@ -27,16 +27,26 @@
 
 #include "../../src/header.h"
 
-void update(int *a, int *b) {
+namespace {
+void update(int *a,
+			int *b) {
     // Complete this function
+}
 }
 
 //return a string with both numbers seprated by a space for checking
-std::string HK_Pointers (int a, int b) {
-    int *pa = &a, *pb = &b;
+std::string HK_Pointers (int xNum1,
+						 int xNum2) {
+	std::string returnString = "";
 
-    scanf("%d %d", &a, &b);
-    update(pa, pb);
-    printf("%d\n%d", a, b);
+    int * ptrNum1 = &xNum1;
+    int * ptrNum2 = &xNum2;
 
+//    scanf("%d %d", &xNum1, &xNum2);
+
+//    update(ptrNum1, ptrNum2);
+
+//    printf("%d\n%d", xNum1, xNum2);
+
+    return returnString;
 }
