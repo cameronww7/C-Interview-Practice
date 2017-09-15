@@ -31,7 +31,11 @@ namespace {
 void update(int *xPtrNum1,
 			int *xPtrNum2) {
 	int num1 = *xPtrNum1 + *xPtrNum2;
-	int num2 = (*xPtrNum1 - *xPtrNum2) * -1;
+	int num2 = (*xPtrNum1 - *xPtrNum2);
+
+	if(num2 < 0) {
+		num2 = num2 * -1;
+	}
 
 	*xPtrNum1 = num1;
 	*xPtrNum2 = num2;
