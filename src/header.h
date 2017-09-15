@@ -111,5 +111,10 @@ int HK_ClassesAndObjects();
 std::string HK_Pointers (int a,
 						 int b);
 
+std::string HK_InheritedCode(int         xNumOfInput,
+							 std::string xInput1,
+							 std::string xInput2,
+							 std::string xInput3);
+
 
 #endif /* HEADER_H_ */

@@ -42,7 +42,7 @@ void update(int *xPtrNum1,
 }
 }
 
-//return a string with both numbers seprated by a space for checking
+//return a string with both numbers separated by a space for checking
 std::string HK_Pointers (int xNum1,
 						 int xNum2) {
 	std::string returnString = "";

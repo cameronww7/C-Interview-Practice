@@ -465,12 +465,12 @@ int main() {
 	//int expectedHK_VariableSizeArray  = 1;
 
 	if (true == false) {
-		std::cout << std::endl << "> Worked : " << "Dont Know"
-				  	  	  	  	  	  << " == " << "Dont Know";
+		std::cout << std::endl << "> Worked : " << "Don't Know"
+				  	  	  	  	  	  << " == " << "Don't Know";
 	} else {
 		std::cout << std::endl << "> Didn't Worked : "
-										<< "Dont Know"
-										<< " == " << "Dont Know";
+										<< "Don't Know"
+										<< " == " << "Don't Know";
 	}
 
 	//HK_ Pointers Program
@@ -487,6 +487,22 @@ int main() {
 		std::cout << std::endl << "> Didn't Worked : "
 										<< returnHK_Pointers
 										<< " == " << expectedHK_Pointers;
+	}
+
+	//HK_InheritedCode Program
+	std::cout << "\n\nHK_InheritedCode Program";
+
+	std::string returnHK_InheritedCode = HK_InheritedCode(3, "peter", "me", "Arxwwz");
+
+	std::string expectedHK_InheritedCode  = " Something";
+
+	if (returnHK_InheritedCode == expectedHK_InheritedCode) {
+		std::cout << std::endl << "> Worked : " << returnHK_InheritedCode
+				  	  	  	  	  	  << " == " << expectedHK_InheritedCode;
+	} else {
+		std::cout << std::endl << "> Didn't Worked : "
+										<< returnHK_InheritedCode
+										<< " == " << expectedHK_InheritedCode;
 	}
 
 	return 0;
