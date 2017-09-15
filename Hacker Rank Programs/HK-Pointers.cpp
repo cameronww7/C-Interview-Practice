@@ -25,12 +25,16 @@
  *
  *************************************************************************/
 
-#include "../../src/header.h"
+#include "../src/header.h"
 
 namespace {
-void update(int *a,
-			int *b) {
-    // Complete this function
+void update(int *xPtrNum1,
+			int *xPtrNum2) {
+	int num1 = *xPtrNum1 + *xPtrNum2;
+	int num2 = (*xPtrNum1 - *xPtrNum2) * -1;
+
+	*xPtrNum1 = num1;
+	*xPtrNum2 = num2;
 }
 }
 
@@ -44,9 +48,11 @@ std::string HK_Pointers (int xNum1,
 
 //    scanf("%d %d", &xNum1, &xNum2);
 
-//    update(ptrNum1, ptrNum2);
+    update(ptrNum1, ptrNum2);
 
 //    printf("%d\n%d", xNum1, xNum2);
+
+    returnString = to_string(*ptrNum1) + " " + to_string(*ptrNum2);
 
     return returnString;
 }

@@ -43,6 +43,8 @@
 
 #include "../src/header.h"
 
+namespace {
+
 class ClassStudent {
 public:
 	ClassStudent() {mAge       = 0;
@@ -68,6 +70,8 @@ private:
 	std::string mFirstName;
 	std::string mLastName;
 };
+
+} // end of Anonymous Namespace
 
 std::string HK_Class(int 		 xAge,
   	     	 	 	 int 		 xStandard,

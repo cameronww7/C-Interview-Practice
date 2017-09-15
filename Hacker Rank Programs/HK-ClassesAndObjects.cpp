@@ -61,6 +61,8 @@
 
 #include "../src/header.h"
 
+namespace {
+
 class ClassStudentObjects {
 public:
 	ClassStudentObjects() {mScoreSum = 0;};
@@ -94,6 +96,7 @@ private:
 	int mScoreSum;
 	int myScrores[5] = {0,0,0,0,0};
 };
+} // end of Anonymous Namespace
 
 int HK_ClassesAndObjects() {
 	int returnInt = 0;
