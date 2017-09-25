@@ -59,6 +59,11 @@ Rational::~Rational() {
 std::ostream & operator << (std::ostream & o, const Rational & r) {
     return o << r.numerator() << '/' << r.denominator();
 }
+
+Rational operator + ( const Rational & lhs, const Rational & rhs ) {
+    return Rational((lhs.numerator() * rhs.denominator()) + (lhs.denominator() * rhs.numerator()),
+    					lhs.denominator() * rhs.denominator());
+}
 } //end of anonymous namespace
 
 void OverloadingOperatorsInClass(void) {
@@ -87,4 +92,6 @@ void OverloadingOperatorsInClass(void) {
     std::cout << "\n> "<< a << " - " << b << " = " << a - b;
     std::cout << "\n> "<< a << " * " << b << " = " << a * b;
     std::cout << "\n> "<< a << " / " << b << " = " << a / b;
+//    std::cout << "\n> "<< a << " + " << 14 << " = " << a + 14;
+    std::cout << "\n> "<< 14 << " + " << a << " = " << 14 + a;
 }
