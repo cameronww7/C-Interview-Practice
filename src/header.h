@@ -3,8 +3,8 @@
  * PROJECT : C++ Practice
  *************************************************************************/
 
-#ifndef HEADER_H_
-#define HEADER_H_
+#ifndef HEADER_H_ // A header guard
+#define HEADER_H_ // A header guard or use #pragma once
 
 #include <vector>
 #include <string>
@@ -22,7 +22,8 @@ using namespace std;
 void PointersTesting(void);
 void ArrayTesting(void);
 void Macros(void);
-
+void Constructors1(void);
+void ImplicitVSExplicitConstructors(void);
 
 /****************************************************************************
  * 							Mini Programs

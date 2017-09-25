@@ -22,6 +22,12 @@ int main(void) {
 	std::cout << "\n\nMacros Testing Program";
 	Macros();
 
+	std::cout << "\n\nConstructors1 Testing Program";
+	Constructors1();
+
+	std::cout << "\n\nImplicitVSExplicitConstructors Testing Program";
+	ImplicitVSExplicitConstructors();
+
 	/****************************************************************************
 	 * 							Mini Programs
 	 ****************************************************************************/
