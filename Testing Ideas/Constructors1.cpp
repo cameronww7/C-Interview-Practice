@@ -47,18 +47,18 @@ namespace {
 	}
 
 	Animal::Animal(const Animal & a) {
-		puts("\n> copy constructor");
+		puts("> copy constructor");
 		_name = clone_prefix + a._name;
 		_type = a._type;
 		_sound = a._sound;
 	}
 
 	Animal::~Animal() {
-		printf("\n> destructor: %s the %s\n", _name.c_str(), _type.c_str());
+		printf("\n> destructor: %s the %s", _name.c_str(), _type.c_str());
 	}
 
 	void Animal::print () const {
-		printf("\n> %s the %s says %s\n", _name.c_str(), _type.c_str(), _sound.c_str());
+		printf("\n> %s the %s says %s", _name.c_str(), _type.c_str(), _sound.c_str());
 	}
 
 	Animal & Animal::operator=(const Animal & o) {

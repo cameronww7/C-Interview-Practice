@@ -8,7 +8,7 @@
 
 #include "../src/header.h"
 
-namespace {
+namespace { // used so other files don't get confused
 	const size_t _maxsize = 1024;
 
 	class strsize {
@@ -45,7 +45,6 @@ namespace {
 	void func(const strsize & s) {
 		printf("\n> size is %ld", s.size());
 	}
-
 } //end of anonymous namespace
 
 void ImplicitVSExplicitConstructors(void) {

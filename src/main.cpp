@@ -28,6 +28,9 @@ int main(void) {
 	std::cout << "\n\nImplicitVSExplicitConstructors Testing Program";
 	ImplicitVSExplicitConstructors();
 
+	std::cout << "\n\nOverloadingOperatorsInClass Testing Program";
+	OverloadingOperatorsInClass();
+
 	/****************************************************************************
 	 * 							Mini Programs
 	 ****************************************************************************/

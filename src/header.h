@@ -24,6 +24,7 @@ void ArrayTesting(void);
 void Macros(void);
 void Constructors1(void);
 void ImplicitVSExplicitConstructors(void);
+void OverloadingOperatorsInClass(void);
 
 /****************************************************************************
  * 							Mini Programs
