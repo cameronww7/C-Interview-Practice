@@ -5,7 +5,7 @@
 
 #include "header.h"
 
-int main() {
+int main(void) {
 
 
 	/****************************************************************************
@@ -16,6 +16,8 @@ int main() {
 	std::cout << "\n\nPointers Testing Program";
 	PointersTesting();
 
+	std::cout << "\n\nArray Testing Program";
+	ArrayTesting();
 
 	/****************************************************************************
 	 * 							Mini Programs
