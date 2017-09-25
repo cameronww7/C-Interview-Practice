@@ -7,6 +7,22 @@
 
 int main() {
 
+
+	/****************************************************************************
+	 * 							Testing Programs
+	 ****************************************************************************/
+	std::cout << "\n\nTesting Program";
+
+	std::cout << "\n\nPointers Testing Program";
+	PointersTesting();
+
+
+	/****************************************************************************
+	 * 							Mini Programs
+	 ****************************************************************************/
+	std::cout << "\n\nMini Program";
+
+
 	//Palindrome Program
 	std::cout << "\n\nPalindrome Program";
 	std::string Palindrome = "abcdcba";

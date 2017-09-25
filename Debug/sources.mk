@@ -27,5 +27,6 @@ Hacker\ Rank\ Programs \
 Hacker\ Rank\ Programs/In\ Progress \
 Mini\ Programs \
 Mini\ Programs/In\ Progress \
+Testing\ Ideas \
 src \
 
