@@ -21,6 +21,7 @@ using namespace std;
 
 void PointersTesting(void);
 void ArrayTesting(void);
+void Macros(void);
 
 
 /****************************************************************************

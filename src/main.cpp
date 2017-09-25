@@ -19,6 +19,9 @@ int main(void) {
 	std::cout << "\n\nArray Testing Program";
 	ArrayTesting();
 
+	std::cout << "\n\nMacros Testing Program";
+	Macros();
+
 	/****************************************************************************
 	 * 							Mini Programs
 	 ****************************************************************************/
