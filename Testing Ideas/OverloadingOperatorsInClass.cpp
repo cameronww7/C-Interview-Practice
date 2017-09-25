@@ -26,11 +26,11 @@ public:
 };
 
 Rational & Rational::operator = ( const Rational & rhs ) {
-    if( this != &rhs ) {
+    if( this != &rhs ) { // this is used to catch ourself
         _n = rhs.numerator();
         _d = rhs.denominator();
     }
-    return *this;
+    return *this; // this is the object that it was called on
 }
 
 Rational Rational::operator + ( const Rational & rhs ) const {
@@ -50,7 +50,9 @@ Rational Rational::operator / ( const Rational & rhs ) const {
 }
 
 Rational::~Rational() {
-    _n = 0; _d = 1;
+	printf("\n> dtor: %d/%d", _n, _d);
+    _n = 0;
+    _d = 1;
 }
 
 // useful for std::cout
@@ -61,22 +63,28 @@ std::ostream & operator << (std::ostream & o, const Rational & r) {
 
 void OverloadingOperatorsInClass(void) {
 
+	std::cout << std::endl;
     Rational a = 7;		// 7/1
-    cout << "> a is: " << a << endl;
+    std::cout << "\n> a is: " << a;
+
     Rational b(5, 3);	// 5/3
-    cout << "> b is: " << b << endl;
+    std::cout << "\n> b is: " << b;
+
     Rational c = b;		// copy constructor
-    cout << "> c is: " << c << endl;
+    std::cout << "\n> c is: " << c;
+
     Rational d;			// default constructor
-    cout << "> d is: " << d << endl;
+    std::cout << "\n> d is: " << d;
+
     d = c;				// assignment operator
-    cout << "> d is: " << d << endl;
+    std::cout << "\n> d is: " << d;
+
     Rational & e = d;	// reference
     d = e;				// assignment to self!
-    cout << "> e is: " << e << endl;
+    std::cout << "\n> e is: " << e;
 
-    cout << "> "<< a << " + " << b << " = " << a + b << endl;
-    cout << "> "<< a << " - " << b << " = " << a - b << endl;
-    cout << "> "<< a << " * " << b << " = " << a * b << endl;
-    cout << "> "<< a << " / " << b << " = " << a / b << endl;
+    std::cout << "\n> "<< a << " + " << b << " = " << a + b;
+    std::cout << "\n> "<< a << " - " << b << " = " << a - b;
+    std::cout << "\n> "<< a << " * " << b << " = " << a * b;
+    std::cout << "\n> "<< a << " / " << b << " = " << a / b;
 }

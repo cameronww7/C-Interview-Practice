@@ -11,34 +11,42 @@ int main(void) {
 	/****************************************************************************
 	 * 							Testing Programs
 	 ****************************************************************************/
-	std::cout << "\n\nTesting Program";
+	std::cout << "\n\nTesting Programs";
+	std::cout << "\n******************************************************************";
 
 	std::cout << "\n\nPointers Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	PointersTesting();
 
 	std::cout << "\n\nArray Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	ArrayTesting();
 
 	std::cout << "\n\nMacros Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	Macros();
 
 	std::cout << "\n\nConstructors1 Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	Constructors1();
 
 	std::cout << "\n\nImplicitVSExplicitConstructors Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	ImplicitVSExplicitConstructors();
 
 	std::cout << "\n\nOverloadingOperatorsInClass Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
 	OverloadingOperatorsInClass();
 
 	/****************************************************************************
 	 * 							Mini Programs
 	 ****************************************************************************/
-	std::cout << "\n\nMini Program";
-
+	std::cout << "\n\nMini Programs";
+	std::cout << "\n******************************************************************";
 
 	//Palindrome Program
 	std::cout << "\n\nPalindrome Program";
+	std::cout << "\n------------------------------------------------------------------";
 	std::string Palindrome = "abcdcba";
 
 	if (IsPalindrome(Palindrome)) {
@@ -50,6 +58,7 @@ int main(void) {
 
 	//Longest Palindrome in String Program
 	std::cout << "\n\nLongest Palindrome in String Program";
+	std::cout << "\n------------------------------------------------------------------";
 	std::string xString = "abbbbabcbacddsa";
 	Palindrome = LongestPalindromeInString(xString);
 
@@ -64,6 +73,7 @@ int main(void) {
 
 	//Euclidean Distance Program
 	std::cout << "\n\nEuclidean Distance Program";
+	std::cout << "\n------------------------------------------------------------------";
 	double euclideanDistance = EuclideanDistance(4);
 
 	if (euclideanDistance == 2) {
@@ -75,6 +85,7 @@ int main(void) {
 
 	//Remove Char from String Program
 	std::cout << "\n\nRemove Char from String Program";
+	std::cout << "\n------------------------------------------------------------------";
 	xString = "aaabaa";
 
 	if (RemoveCharFromString(xString, 'b') == "aaaaa") {
@@ -86,6 +97,7 @@ int main(void) {
 
 	//TwoSum Program
 	std::cout << "\n\nTwoSum Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int goalNumber = 9;
 	const int myArray[] = {2,7,11,15};
 	std::vector <int> myVector (myArray, myArray +
@@ -105,6 +117,7 @@ int main(void) {
 
 	//Median Of Two Sorted Arrays Program
 	std::cout << "\n\nMedian Of Two Sorted Arrays Program";
+	std::cout << "\n------------------------------------------------------------------";
 	const int ARR_SIZE_ONE = 2;
 	const int ARR_SIZE_TWO = 2;
 	const int myArrayOne[ARR_SIZE_ONE] = {1,2};
@@ -124,6 +137,7 @@ int main(void) {
 
 	//Climb Stairs Program
 	std::cout << "\n\nClimb Stairs Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int numberOfStairs = 3;
 	int expectedReturn = 3;
 	int possibleWaysToClimb = ClimbStairs(numberOfStairs);
@@ -139,6 +153,7 @@ int main(void) {
 
 	//Count Primes Program
 	std::cout << "\n\nCount Primes Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int number = 9;
 	    expectedReturn = 4;
 	int numberOfPrimes = CountPrimes(number);
@@ -153,6 +168,7 @@ int main(void) {
 
 	//Can Jump Program
 	std::cout << "\n\nCan Jump Program";
+	std::cout << "\n------------------------------------------------------------------";
 	const int myArrayTrue[]  = {2,3,1,1,4};
 	const int myArrayFalse[] = {3,2,1,0,4};
 	std::vector <int> numStepTrue(myArrayTrue, myArrayTrue +
@@ -176,6 +192,7 @@ int main(void) {
 
 	//Fizz Buzz Program
 	std::cout << "\n\nFizz Buzz Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int fizbizNumb = 15;
 	const std::string myArrayFizBiz[]  = {"1", "2", "Fizz", "4", "Buzz",
 										  "Fizz", "7", "8", "Fizz", "Buzz",
@@ -198,6 +215,7 @@ int main(void) {
 
 	//Power Of Three Program
 	std::cout << "\n\nPower Of Three Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int numberForPower = 9;
 	bool expectReturnForPower = true;
 	bool returnFromPowerOf3   = isPowerOfThree(numberForPower);
@@ -212,6 +230,7 @@ int main(void) {
 
 	//Reverse Bits Program
 	std::cout << "\n\nReverse Bits Program";
+	std::cout << "\n------------------------------------------------------------------";
 	uint32_t expectedReverseBits = 964176192;
 	uint32_t returnReverseBits   = reverseBits(43261596);
 
@@ -225,6 +244,7 @@ int main(void) {
 
 	//Reverse Int Program
 	std::cout << "\n\nReverse Int Program";
+	std::cout << "\n------------------------------------------------------------------";
 	uint32_t expectedReverseInt = 321;
 	uint32_t returnReverseInt   = ReverseInt(123);
 
@@ -238,6 +258,7 @@ int main(void) {
 
 	//Reverse String Program
 	std::cout << "\n\nReverse String Program";
+	std::cout << "\n------------------------------------------------------------------";
 	std::string expectedReverseStrng = "olleh";
 	std::string returnReverseString = ReverseString("hello");
 
@@ -251,6 +272,7 @@ int main(void) {
 
 	//Single Number Program
 	std::cout << "\n\nSingle Number Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int expectedOutNum = 5;
 	const int inputArray[] = {3,2,3,1,5,4,1,2,4};
 	std::vector <int> inputVector(inputArray, inputArray +
@@ -267,6 +289,7 @@ int main(void) {
 
 	//Unique Paths Program
 	std::cout << "\n\nUnique Paths Program";
+	std::cout << "\n------------------------------------------------------------------";
 	int expectedUnquiePath= 5;
 
 	int returnUniquePath = UniquePaths(1,2);
@@ -283,9 +306,12 @@ int main(void) {
 /****************************************************************************
  * 							Hacker Rank Programs
  ****************************************************************************/
+	std::cout << "\n\nHacker Rank Programs";
+	std::cout << "\n******************************************************************";
 
 	//HK_ Basic Data Types Program
 	std::cout << "\n\nHK_ Basic DataT ypes Program";
+	std::cout << "\n------------------------------------------------------------------";
 	const int    integerNum = 3;
 	const long   longNum	= 12345678912345;
 	const char   charChar 	= 'a';
@@ -313,6 +339,7 @@ int main(void) {
 
 	//HK_ input And Output Program
 	std::cout << "\n\nHK_ input And Output Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	int returnHK_inputAndOutput = HK_inputAndOutput(2,3,4);
 
@@ -329,6 +356,7 @@ int main(void) {
 
 	//HK_ConditionalStatement Program
 	std::cout << "\n\nHK_ Conditional Statement Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_CondiSM = HK_ConditionalStatement(5);
 
@@ -345,6 +373,7 @@ int main(void) {
 
 	//HK_ Array Intro Program
 	std::cout << "\n\nHK_ Array Intro Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	const int HR_ARRAY_INTRO_SIZE = 4;
 	bool checkIfSame = true;
@@ -376,6 +405,7 @@ int main(void) {
 
 	//HK_ For Loop Program
 	std::cout << "\n\nHK_ For Loop Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_ForLoop = HK_ForLoop(5,2);
 
@@ -392,6 +422,7 @@ int main(void) {
 
 	//HK_ Functions Program
 	std::cout << "\nHK_ Functions Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	StructStudent returnHK_Structs = HK_Structs(15,10,"john","carmack");
 
@@ -421,6 +452,7 @@ int main(void) {
 
 	//HK_ For Loop Program
 	std::cout << "\n\nHK_ For Loop Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_Strings = HK_Strings("abcd", "ef");
 
@@ -437,6 +469,7 @@ int main(void) {
 
 	//HK_StringStream Program
 	std::cout << "\n\nHK_StringStream Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::stringstream returnHK_StringStream = HK_StringStream(23,4,56);
 
@@ -456,6 +489,7 @@ int main(void) {
 
 	//HK_ Class Program
 	std::cout << "\n\nHK_ Class Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_Class = HK_Class(15,10,"john","carmack");
 
@@ -472,6 +506,7 @@ int main(void) {
 
 	//HK_ Classes And Objects Program
 	std::cout << "\n\nHK_ Classes And Objects Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	int returnHK_ClassesAndObjects = HK_ClassesAndObjects();
 
@@ -488,6 +523,7 @@ int main(void) {
 
 	//HK_ Variable Size Array Program
 	std::cout << "\n\nHK_ Variable Size Array Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	//int returnHK_VariableSizeArray=
 	HK_VariableSizeArray();
@@ -505,6 +541,7 @@ int main(void) {
 
 	//HK_ Pointers Program
 	std::cout << "\n\nHK_ Pointers Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_Pointers = HK_Pointers(4,5);
 
@@ -521,6 +558,7 @@ int main(void) {
 
 	//HK_InheritedCode Program
 	std::cout << "\n\nHK_InheritedCode Program";
+	std::cout << "\n------------------------------------------------------------------";
 
 	std::string returnHK_InheritedCode = HK_InheritedCode(3, "peter", "me", "Arxwwz");
 
