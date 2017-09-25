@@ -25,6 +25,7 @@ void Macros(void);
 void Constructors1(void);
 void ImplicitVSExplicitConstructors(void);
 void OverloadingOperatorsInClass(void);
+void Qualifiers(void);
 
 /****************************************************************************
  * 							Mini Programs

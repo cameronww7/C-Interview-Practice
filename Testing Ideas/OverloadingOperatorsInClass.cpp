@@ -60,6 +60,7 @@ std::ostream & operator << (std::ostream & o, const Rational & r) {
     return o << r.numerator() << '/' << r.denominator();
 }
 
+// overloaded for a literal
 Rational operator + ( const Rational & lhs, const Rational & rhs ) {
     return Rational((lhs.numerator() * rhs.denominator()) + (lhs.denominator() * rhs.numerator()),
     					lhs.denominator() * rhs.denominator());
