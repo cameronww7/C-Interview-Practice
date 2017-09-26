@@ -110,7 +110,8 @@ namespace {
 		return name() + "-ay";
 //		return Animal::name() + "-ay"; // both work returns work
 	}
-}
+} // Anonymous namespace end
+
 void BasicClassInheritance(void) {
     Dog dogClass("Rover");
     Cat catClass("Fluffy");

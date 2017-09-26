@@ -29,6 +29,7 @@ void Qualifiers(void);
 void NewAndDelete(void);
 void BinaryOperations(void);
 void BasicClassInheritance(void);
+void Templates(void);
 
 /****************************************************************************
  * 							Mini Programs
