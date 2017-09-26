@@ -10,6 +10,18 @@
 
 namespace {
 
+	class Fur {
+		public:
+		const string & type() const { return _type; }
+
+		protected:
+		Fur(const std::string & f) : _type(f) {};
+
+		private:
+		std::string _type;
+		Fur(){};
+	};
+
 	/**************************************************************************
 	 * Class : 	Animal Class - Base Class
 	 *************************************************************************/
@@ -32,9 +44,10 @@ namespace {
 			// private constructor prevents construction of base class
 			Animal(){ puts("\n> base class construction");};
 
-			friend class Dog; // works but exposes all private variables
-			friend class Cat; // all the derived classes.
-			friend class Pig;
+			//Friend classes
+//			friend class Dog; // works but exposes all private variables
+//			friend class Cat; // all the derived classes.
+//			friend class Pig;
 	}; // end of base class animal
 
 	void Animal::speak() const {
@@ -60,15 +73,19 @@ namespace {
 	/**************************************************************************
 	 * Class :  Cat class - derived from Animal
 	 *************************************************************************/
-	class Cat : public Animal {
+	class Cat : public Animal, public Fur {
 		public:
-			Cat( string n ) : Animal(n, "cat", "meow"), petted(0) {};
+			Cat( string n ) : Animal(n, "cat", "meow"), Fur("silky"), petted(0) {};
 			int pet() { return ++petted; }
+			void grooming() const;
 
 		private:
 			int petted;
 	}; // end of Cat class
 
+	void Cat::grooming (void) const {
+		printf("\n> %s grooms her %s fur", Animal::name().c_str(), Fur::type().c_str());
+	}
 
 
 	/**************************************************************************
@@ -101,4 +118,5 @@ void BasicClassInheritance(void) {
     printf("\n> the cat has been petted %d times", catClass.pet());
     printf("\n> the pig has been   fed  %d times", pigClass.feed());
     printf("\n> the pig is sometimes called %s", pigClass.latin().c_str());
+    catClass.grooming();
 }
