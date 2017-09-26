@@ -7,6 +7,7 @@
  *************************************************************************/
 
 #include "../src/header.h"
+
 namespace {
 
 	const char * u8_to_bin ( unsigned char x ) {

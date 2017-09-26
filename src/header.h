@@ -28,6 +28,7 @@ void OverloadingOperatorsInClass(void);
 void Qualifiers(void);
 void NewAndDelete(void);
 void BinaryOperations(void);
+void BasicClassInheritance(void);
 
 /****************************************************************************
  * 							Mini Programs
