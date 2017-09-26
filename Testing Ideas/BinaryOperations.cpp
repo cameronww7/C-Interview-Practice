@@ -32,7 +32,19 @@ void BinaryOperations(void) {
     unsigned char x = 5;
     unsigned char y = 10;
 
-    printf("x is %s\n", u8_to_bin(x));
-    printf("y is %s\n", u8_to_bin(y));
-    printf("result is %s\n", u8_to_bin(x | y));
+    printf("\n>-------------- x is %s", u8_to_bin(x));
+    printf("\n>-------------- y is %s", u8_to_bin(y));
+    printf("\n>----------------------------");
+    printf("\n> (x | y)  result is %s", u8_to_bin(x | y));
+    printf("\n> (x | y)  result is %s", u8_to_bin(x & y));
+
+    printf("\n\n>-------------- x is %s", u8_to_bin(x));
+    printf("\n>----------------------------");
+    printf("\n> (x >> 1) result is %s", u8_to_bin(x >> 1));
+    printf("\n> (x << 2) result is %s", u8_to_bin(x << 2));
+
+    printf("\n\n>-------------- y is %s", u8_to_bin(y));
+    printf("\n>----------------------------");
+    printf("\n> (y >> 1) result is %s", u8_to_bin(y >> 1));
+    printf("\n> (y << 2) result is %s", u8_to_bin(y << 2));
 }
