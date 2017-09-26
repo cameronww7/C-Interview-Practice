@@ -27,7 +27,8 @@ namespace {
 	 *************************************************************************/
 	class Animal {
 		public:
-			void speak() const;
+			virtual ~Animal () {};
+			virtual void speak() const; // can be overloaded in derived class
 			const string & name() const { return _name; }
 			const string & type() const { return _type; }
 			const string & sound() const { return _sound; }
@@ -78,6 +79,7 @@ namespace {
 			Cat( string n ) : Animal(n, "cat", "meow"), Fur("silky"), petted(0) {};
 			int pet() { return ++petted; }
 			void grooming() const;
+			void speak() const;
 
 		private:
 			int petted;
@@ -85,6 +87,10 @@ namespace {
 
 	void Cat::grooming (void) const {
 		printf("\n> %s grooms her %s fur", Animal::name().c_str(), Fur::type().c_str());
+	}
+
+	void Cat::speak() const {
+		printf("\n> Purr");
 	}
 
 
@@ -117,6 +123,13 @@ void BasicClassInheritance(void) {
     printf("\n\n> the dog has been walked %d times", dogClass.walk());
     printf("\n> the cat has been petted %d times", catClass.pet());
     printf("\n> the pig has been   fed  %d times", pigClass.feed());
-    printf("\n> the pig is sometimes called %s", pigClass.latin().c_str());
+    printf("\n\n> the pig is sometimes called %s", pigClass.latin().c_str());
     catClass.grooming();
+
+    std::cout << std::endl;
+
+    Animal * aPtr[] = { &dogClass, & catClass, & pigClass };
+    for( Animal * a : aPtr) {
+    	a->speak();
+    }
 }
