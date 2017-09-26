@@ -31,6 +31,10 @@ namespace {
 			string _sound;
 			// private constructor prevents construction of base class
 			Animal(){ puts("\n> base class construction");};
+
+			friend class Dog; // works but exposes all private variables
+			friend class Cat; // all the derived classes.
+			friend class Pig;
 	}; // end of base class animal
 
 	void Animal::speak() const {
