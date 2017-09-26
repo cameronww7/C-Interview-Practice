@@ -8,11 +8,11 @@
 
 #include <vector>
 #include <string>
-#include <sstream>  // for String Stream
+#include <sstream>  	// for String Stream
 #include <iostream>
-#include <algorithm> // for std::sort
-#include <iomanip> // for setw
-#include <cstdint> // for uint32_t
+#include <algorithm> 	// for std::sort
+#include <iomanip> 		// for setw
+#include <cstdint> 		// for uint32_t
 using namespace std;
 
 /****************************************************************************
@@ -26,6 +26,8 @@ void Constructors1(void);
 void ImplicitVSExplicitConstructors(void);
 void OverloadingOperatorsInClass(void);
 void Qualifiers(void);
+void NewAndDelete(void);
+void BinaryOperations(void);
 
 /****************************************************************************
  * 							Mini Programs
