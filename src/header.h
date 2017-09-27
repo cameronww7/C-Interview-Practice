@@ -32,6 +32,7 @@ void BinaryOperations(void);
 void BasicClassInheritance(void);
 void Templates(void);
 void InAndOutputFormatting(void);
+void Iterator(void);
 
 /****************************************************************************
  * 							Mini Programs
