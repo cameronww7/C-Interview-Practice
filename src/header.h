@@ -40,6 +40,8 @@ void Sets(void);
 void Stacks(void);
 void Queues(void);
 void Deques(void);
+void Vectors(void);
+void MoveSemantics(void);
 
 /****************************************************************************
  * 							Mini Programs
