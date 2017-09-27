@@ -31,6 +31,7 @@ void NewAndDelete(void);
 void BinaryOperations(void);
 void BasicClassInheritance(void);
 void Templates(void);
+void InAndOutputFormatting(void);
 
 /****************************************************************************
  * 							Mini Programs
