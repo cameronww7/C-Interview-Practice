@@ -9,7 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
--include Testing\ Ideas/subdir.mk
+-include Testing_C++_Structures/subdir.mk
 -include Mini\ Programs/In\ Progress/subdir.mk
 -include Mini\ Programs/subdir.mk
 -include Hacker\ Rank\ Programs/In\ Progress/subdir.mk

@@ -36,6 +36,8 @@ void Iterator(void);
 void Lists(void);
 void Maps(void);
 void Sets(void);
+void Stacks(void);
+void Queues(void);
 
 /****************************************************************************
  * 							Mini Programs

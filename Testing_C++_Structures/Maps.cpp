@@ -11,21 +11,21 @@
 
 void Maps(void) {
 	std::cout << "> map of strings from initializer list:" << std::endl;
-	std::map<string, string> strmap = { { "George", "Father" }, { "Ellen", "Mother" },
-		{ "Ruth", "Daughter" }, { "Spike", "Neighbor's Son" } };
+	std::map<string, string> stringMap = { { "George", "Father" }, { "Ellen", "Mother" },
+										   { "Ruth", "Daughter" }, { "Spike", "Neighbor's Son" } };
 
-	std::cout << "> size is "   << strmap.size() << std::endl;
+	std::cout << "> size is "   << stringMap.size() << std::endl;
 	std::cout << "> get some values:" << std::endl;
-	std::cout << "> George is " << strmap["George"] << std::endl;
-	std::cout << "> Ellen is "  << strmap.at("Ellen") << std::endl;
-	std::cout << "> Spike is "  << strmap.find("Spike")->second << std::endl;
+	std::cout << "> George is " << stringMap["George"] << std::endl;
+	std::cout << "> Ellen is "  << stringMap.at("Ellen") << std::endl;
+	std::cout << "> Spike is "  << stringMap.find("Spike")->second << std::endl;
 	std::cout << endl;
 
 	/**************************************************************************
 	 * loop through the Map
 	 *************************************************************************/
 	std::cout << "> loop through the set:" << std::endl;
-	for( auto p : strmap ) {
+	for( auto p : stringMap ) {
 		std::cout << "> " << p.first << " is " << p.second << std::endl;
 	}
 	std::cout << std::endl;
@@ -34,14 +34,14 @@ void Maps(void) {
 	 * insert an element
 	 *************************************************************************/
 	std::cout << "> insert an element: Luke, Neighbor" << std::endl;
-	strmap.insert( { "Luke", "Neighbor" } );
+	stringMap.insert( { "Luke", "Neighbor" } );
 	std::cout << std::endl;
 
 	/**************************************************************************
 	 * inserted - size is
 	 *************************************************************************/
-	std::cout << "> inserted - size is " << strmap.size() << std::endl;
-	for( auto p : strmap ) {
+	std::cout << "> inserted - size is " << stringMap.size() << std::endl;
+	for( auto p : stringMap ) {
 		std::cout << "> " << p.first << " is " << p.second << std::endl;
 	}
 	std::cout << std::endl;
@@ -50,7 +50,7 @@ void Maps(void) {
 	 * insert a duplicate
 	 *************************************************************************/
 	std::cout << "> insert a duplicate:" << std::endl;
-	auto rp = strmap.insert( { "Luke", "Neighbor" } );
+	auto rp = stringMap.insert( { "Luke", "Neighbor" } );
 	if (rp.second) {
 		std::cout << "> insert succeeded: " << rp.first->first << " is " << rp.first->second << std::endl;
 	} else {
@@ -60,8 +60,8 @@ void Maps(void) {
 	/**************************************************************************
 	 * range-based for loop
 	 *************************************************************************/
-	std::cout << "\n> after insert size is " << strmap.size() << std::endl;
-	for( auto p : strmap ) {
+	std::cout << "\n> after insert size is " << stringMap.size() << std::endl;
+	for( auto p : stringMap ) {
 		std::cout << "> " << p.first << " is " << p.second << std::endl;
 	}
 	std::cout << std::endl;
@@ -70,11 +70,11 @@ void Maps(void) {
 	 * find and erase an element
 	 *************************************************************************/
 	std::cout << "> find and erase an element:" << std::endl;
-	auto it = strmap.find("Spike");
-	if(it != strmap.end()) {
+	auto it = stringMap.find("Spike");
+	if(it != stringMap.end()) {
 		std::cout << "> found " << it->first << ":" << it->second << std::endl;
-		strmap.erase(it);
-		std::cout << "> erased - size is " << strmap.size() << std::endl;
+		stringMap.erase(it);
+		std::cout << "> erased - size is " << stringMap.size() << std::endl;
 	} else {
 		std::cout << "> not found" << std::endl;
 	}
@@ -83,7 +83,7 @@ void Maps(void) {
 	 * Display Map
 	 *************************************************************************/
 	std::cout << std::endl;
-	for( auto p : strmap ) {
+	for( auto p : stringMap ) {
 		std::cout << "> " << p.first << " is " << p.second << std::endl;
 	}
 	std::cout << std::endl;

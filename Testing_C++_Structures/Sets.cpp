@@ -10,15 +10,15 @@
 #include <set>
 
 void Sets(void) {
-    std::set<std::string> strset = { "one", "two", "three", "four", "five" };
-    std::cout << "> size of set: " << strset.size() << std::endl;
+    std::set<std::string> stringSet = { "one", "two", "three", "four", "five" };
+    std::cout << "> size of set: " << stringSet.size() << std::endl;
     std::cout << "> ordered set is alphabetical:" << std::endl;
 
 	/**************************************************************************
 	 * loop through the set
 	 *************************************************************************/
     std::cout << "> ";
-    for(std::string s : strset) {
+    for(std::string s : stringSet) {
     	std::cout << s << " ";
     }
     std::cout << std::endl << std::endl;
@@ -27,13 +27,13 @@ void Sets(void) {
 	 * insert element \"six\"
 	 *************************************************************************/
     std::cout << "> insert element \"six\":" << std::endl;
-    strset.insert("six");
+    stringSet.insert("six");
 
 	/**************************************************************************
 	 * loop through the set
 	 *************************************************************************/
     std::cout << "> ";
-    for(string s : strset) {
+    for(string s : stringSet) {
     	std::cout << s << " ";
     }
     std::cout << std::endl << std::endl;
@@ -42,10 +42,10 @@ void Sets(void) {
 	 * find and erase element \"six\"
 	 *************************************************************************/
     std::cout << "> find and erase element \"six\":" << std::endl;
-    std::set<std::string>::iterator it = strset.find("six");
-    if(it != strset.end()) {
+    std::set<std::string>::iterator it = stringSet.find("six");
+    if(it != stringSet.end()) {
     	std::cout << "> erasing " << *it << std::endl;
-        strset.erase(it);
+        stringSet.erase(it);
     } else {
     	std::cout << "> not found" << std::endl;
     }
@@ -54,7 +54,7 @@ void Sets(void) {
 	 * loop through the set
 	 *************************************************************************/
     std::cout << "> ";
-    for(std::string s : strset) {
+    for(std::string s : stringSet) {
     	std::cout << s << " ";
     }
     std::cout << std::endl << std::endl;
@@ -63,13 +63,13 @@ void Sets(void) {
 	 * insert duplicate element \"five\"
 	 *************************************************************************/
     std::cout << "> insert duplicate element \"five\":" << std::endl;
-    strset.insert("five");
+    stringSet.insert("five");
 
 	/**************************************************************************
 	 * loop through the set
 	 *************************************************************************/
     std::cout << "> ";
-    for(std::string s : strset) {
+    for(std::string s : stringSet) {
     	std::cout << s << " ";
     }
     std::cout << std::endl << std::endl;
