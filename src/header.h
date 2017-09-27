@@ -13,6 +13,7 @@
 #include <algorithm> 	// for std::sort
 #include <iomanip> 		// for setw
 #include <cstdint> 		// for uint32_t
+#include <cstdio>
 using namespace std;
 
 /****************************************************************************
