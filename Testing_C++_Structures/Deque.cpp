@@ -9,6 +9,17 @@
 #include "../src/header.h"
 #include <deque>
 
+namespace {
+	void displayObject(std::deque<std::string> & displayMe) {
+		std::cout << "> ";
+		for(std::string s : displayMe) {
+			std::cout << s << ' ';
+		}
+		std::cout << std::endl;
+	}
+}
+
+
 void Deques(void) {
     std::deque<std::string> dequeString;
 
@@ -31,14 +42,7 @@ void Deques(void) {
     std::cout << "> front: " << dequeString.front() << std::endl;
     std::cout << "> back: "  << dequeString.back()  << std::endl << std::endl;
 
-	/**************************************************************************
-	 * access deque with iterator
-	 *************************************************************************/
-    std::cout << "> ";
-    for(std::string s : dequeString) {
-    	std::cout << s << ' ';
-    }
-    std::cout << std::endl;
+    displayObject(dequeString);
 
 	/**************************************************************************
 	 *  pop from front
@@ -46,11 +50,7 @@ void Deques(void) {
     std::cout << "\n> pop from front:" << std::endl;
     dequeString.pop_front();
 
-    std::cout << "> ";
-    for(std::string s : dequeString) {
-    	std::cout << s << ' ';
-    }
-    std::cout << std::endl;
+    displayObject(dequeString);
 
 	/**************************************************************************
 	 *  pop from back
@@ -58,11 +58,7 @@ void Deques(void) {
     std::cout << "\n> pop from back:" << std::endl;
     dequeString.pop_back();
 
-    std::cout << "> ";
-    for(std::string s : dequeString) {
-    	std::cout << s << ' ';
-    }
-    std::cout << std::endl;
+    displayObject(dequeString);
 
 	/**************************************************************************
 	 * push front
@@ -70,11 +66,7 @@ void Deques(void) {
     std::cout << "\n> push front:" << std::endl;
     dequeString.push_front("newfront");
 
-    std::cout << "> ";
-    for(std::string s : dequeString) {
-    	std::cout << s << ' ';
-    }
-    std::cout << std::endl;
+    displayObject(dequeString);
 
 	/**************************************************************************
 	 * push back
@@ -82,9 +74,5 @@ void Deques(void) {
     std::cout << "\n> push back:" << std::endl;
     dequeString.push_back("newback");
 
-    std::cout << "> ";
-    for(std::string s : dequeString) {
-    	std::cout << s << ' ';
-    }
-    std::cout << std::endl;
+    displayObject(dequeString);
 }
