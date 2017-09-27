@@ -24,7 +24,7 @@ void Maps(void) {
 	/**************************************************************************
 	 * loop through the Map
 	 *************************************************************************/
-	std::cout << "> loop through the set:" << std::endl;
+	std::cout << "> loop through the map:" << std::endl;
 	for( auto p : stringMap ) {
 		std::cout << "> " << p.first << " is " << p.second << std::endl;
 	}
@@ -50,9 +50,10 @@ void Maps(void) {
 	 * insert a duplicate
 	 *************************************************************************/
 	std::cout << "> insert a duplicate:" << std::endl;
-	auto rp = stringMap.insert( { "Luke", "Neighbor" } );
-	if (rp.second) {
-		std::cout << "> insert succeeded: " << rp.first->first << " is " << rp.first->second << std::endl;
+	auto response = stringMap.insert( { "Luke", "Neighbor" } );
+	if (response.second) {
+		std::cout << "> insert succeeded: " << response.first->first << " is "
+				  << response.first->second << std::endl;
 	} else {
 		std::cout << "> insert failed" << std::endl;
 	}

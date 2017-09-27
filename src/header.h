@@ -38,6 +38,7 @@ void Maps(void);
 void Sets(void);
 void Stacks(void);
 void Queues(void);
+void Deques(void);
 
 /****************************************************************************
  * 							Mini Programs

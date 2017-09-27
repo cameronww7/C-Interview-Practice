@@ -63,12 +63,18 @@ void Sets(void) {
 	 * insert duplicate element \"five\"
 	 *************************************************************************/
     std::cout << "> insert duplicate element \"five\":" << std::endl;
-    stringSet.insert("five");
+    auto response = stringSet.insert("five");
+
+    if(response.second) {
+    	std::cout << "> Input Succeeded";
+    } else {
+    	std::cout << "> Input Failed";
+    }
 
 	/**************************************************************************
 	 * loop through the set
 	 *************************************************************************/
-    std::cout << "> ";
+    std::cout << "\n> ";
     for(std::string s : stringSet) {
     	std::cout << s << " ";
     }
