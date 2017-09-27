@@ -33,6 +33,9 @@ void BasicClassInheritance(void);
 void Templates(void);
 void InAndOutputFormatting(void);
 void Iterator(void);
+void Lists(void);
+void Maps(void);
+void Sets(void);
 
 /****************************************************************************
  * 							Mini Programs

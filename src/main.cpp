@@ -11,65 +11,77 @@ int main(void) {
 	/****************************************************************************
 	 * 							Testing Programs
 	 ****************************************************************************/
-	std::cout << "\n\nTesting Programs";
+	std::cout << "\n\n\t\tTesting Programs";
 	std::cout << "\n******************************************************************";
 
-	std::cout << "\n\nPointers Testing Program";
+	std::cout << "\n\n\tPointers Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	PointersTesting();
 
-	std::cout << "\n\nArray Testing Program";
+	std::cout << "\n\n\tArray Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	ArrayTesting();
 
-	std::cout << "\n\nMacros Testing Program";
+	std::cout << "\n\n\tMacros Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	Macros();
 
-	std::cout << "\n\nConstructors1 Testing Program";
+	std::cout << "\n\n\tConstructors1 Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	Constructors1();
 
-	std::cout << "\n\nImplicitVSExplicitConstructors Testing Program";
+	std::cout << "\n\n\tImplicitVSExplicitConstructors Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	ImplicitVSExplicitConstructors();
 
-	std::cout << "\n\nOverloadingOperatorsInClass Testing Program";
+	std::cout << "\n\n\tOverloadingOperatorsInClass Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	OverloadingOperatorsInClass();
 
-	std::cout << "\n\nQualifiers Testing Program";
+	std::cout << "\n\n\tQualifiers Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	Qualifiers();
 
-	std::cout << "\n\nNewAndDelete Testing Program";
+	std::cout << "\n\n\tNewAndDelete Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
 	NewAndDelete();
 
-	std::cout << "\n\nBinaryOperationsTesting Program";
+	std::cout << "\n\n\tBinaryOperationsTesting Program";
 	std::cout << "\n------------------------------------------------------------------";
 	BinaryOperations();
 
-	std::cout << "\n\nBasicClassInheritance Program";
+	std::cout << "\n\n\tBasicClassInheritance Program";
 	std::cout << "\n------------------------------------------------------------------";
 	BasicClassInheritance();
 
-	std::cout << "\n\nTemplates Program";
+	std::cout << "\n\n\tTemplates Program";
 	std::cout << "\n------------------------------------------------------------------";
 	Templates();
 
-	std::cout << "\n\nInAndOutputFormatting Program";
+	std::cout << "\n\n\tInAndOutputFormatting Program";
 	std::cout << "\n------------------------------------------------------------------";
 	InAndOutputFormatting();
 
-	std::cout << "\n\nIterator Program";
+	std::cout << "\n\n\tIterator Program";
 	std::cout << "\n------------------------------------------------------------------";
 	Iterator();
+
+	std::cout << "\n\n\tLists Program";
+	std::cout << "\n------------------------------------------------------------------";
+	Lists();
+
+	std::cout << "\n\n\tMaps Program";
+	std::cout << "\n------------------------------------------------------------------";
+	Maps();
+
+	std::cout << "\n\n\tSets Program";
+	std::cout << "\n------------------------------------------------------------------";
+	Sets();
 
 	/****************************************************************************
 	 * 							Mini Programs
 	 ****************************************************************************/
-	std::cout << "\n\nMini Programs";
+	std::cout << "\n\n\t\tMini Programs";
 	std::cout << "\n******************************************************************";
 
 	//Palindrome Program
@@ -334,7 +346,7 @@ int main(void) {
 /****************************************************************************
  * 							Hacker Rank Programs
  ****************************************************************************/
-	std::cout << "\n\nHacker Rank Programs";
+	std::cout << "\n\n\t\tHacker Rank Programs";
 	std::cout << "\n******************************************************************";
 
 	//HK_ Basic Data Types Program
