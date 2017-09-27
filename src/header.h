@@ -20,8 +20,9 @@ using namespace std;
  * 							Testing Programs
  ****************************************************************************/
 
-void PointersTesting(void);
-void ArrayTesting(void);
+void Pointers(void);
+void Pointers_Char(void);
+void Arrays(void);
 void Macros(void);
 void Constructors1(void);
 void ImplicitVSExplicitConstructors(void);

@@ -16,11 +16,15 @@ int main(void) {
 
 	std::cout << "\n\n\tPointers Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
-	PointersTesting();
+	Pointers();
+
+	std::cout << "\n\n\tPointers_Char Testing Program";
+	std::cout << "\n------------------------------------------------------------------";
+	Pointers_Char();
 
 	std::cout << "\n\n\tArray Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
-	ArrayTesting();
+	Arrays();
 
 	std::cout << "\n\n\tMacros Testing Program";
 	std::cout << "\n------------------------------------------------------------------";
