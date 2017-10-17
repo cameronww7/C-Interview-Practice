@@ -9,17 +9,24 @@
 
 #include "Person.h"
 
-namespace std {
-namespace literals {
+namespace hkVirtualFunction {
 
 Person::Person() {
-	// TODO Auto-generated constructor stub
-
+	mName = "n/a";
+	mAge  = -1;
 }
 
 Person::~Person() {
 	// TODO Auto-generated destructor stub
 }
 
-} /* namespace literals */
-} /* namespace std */
+
+void Person::getdata() {
+	cout << "\n> Please enter name: ";
+	cin >> mName;
+
+	cout << "\n> Please enter age: ";
+	cin >> mAge;
+}
+
+}

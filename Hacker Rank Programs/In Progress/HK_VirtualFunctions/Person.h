@@ -12,8 +12,7 @@
 
 #include "../../../src/header.h"
 
-namespace std {
-namespace literals {
+namespace hkVirtualFunction {
 
 class Person {
 public:
@@ -26,13 +25,14 @@ public:
 	void setAge (int xAge)     { mAge  = xAge; }
 	void setName(string xName) { mName = xName; }
 
+	void getdata();
+
 private:
 	int    mAge;
 	string mName;
-
 };
 
-} /* namespace literals */
-} /* namespace std */
+}
+
 
 #endif /* HK_VIRTUALFUNCTIONS_PERSON_H_ */

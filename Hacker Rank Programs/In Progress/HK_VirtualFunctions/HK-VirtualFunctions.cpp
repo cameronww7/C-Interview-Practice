@@ -62,7 +62,14 @@
  *************************************************************************/
 
 #include "../../../src/header.h"
+#include "Student.h"
+#include "Professor.h"
+using namespace hkVirtualFunction;
 
 void HK_VirualFunction() {
+
+	Professor p;
+	Person n;
+
 
 }

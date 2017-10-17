@@ -13,10 +13,9 @@
 #include "../../../src/header.h"
 #include "Person.h"
 
-namespace std {
-namespace literals {
+namespace hkVirtualFunction {
 
-class Professor {
+class Professor : Person {
 public:
 	Professor();
 	virtual ~Professor();
@@ -27,13 +26,13 @@ public:
 	void setPublications(int xPublications) { mPublications = xPublications;}
 	void setCur_ID(int xCur_ID)  { mCur_ID = xCur_ID; }
 
+	void getdata();
 
 private:
 	int mPublications;
 	int mCur_ID;
 };
 
-} /* namespace literals */
-} /* namespace std */
+}
 
 #endif /* HK_VIRTUALFUNCTIONS_PROFESSOR_H_ */
