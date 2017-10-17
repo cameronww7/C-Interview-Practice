@@ -30,7 +30,11 @@ public:
 	}
 	void setCur_ID(int xCur_ID)  { mCur_ID = xCur_ID; }
 
+	void setThisClass();
+
 	void getdata();
+
+	void displayMe();
 
 private:
 	int mMarks[6];

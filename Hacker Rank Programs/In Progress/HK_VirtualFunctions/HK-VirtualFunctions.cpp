@@ -68,10 +68,11 @@ using namespace hkVirtualFunction;
 
 void HK_VirualFunction() {
 
-	Professor p;
+	Student s;
 	Person n;
 
-	p.getdata();
+	s.setThisClass();
+	s.displayMe();
 
 
 }

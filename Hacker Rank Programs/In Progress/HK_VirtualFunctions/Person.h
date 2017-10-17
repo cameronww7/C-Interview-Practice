@@ -22,8 +22,8 @@ public:
 	int    getAge()  { return mAge; }
 	string getName() { return mName; }
 
-	void setAge (int xAge)     { mAge  = xAge; }
-	void setName(string xName) { mName = xName; }
+	virtual void setAge (int xAge)     { mAge  = xAge; }
+	virtual void setName(string xName) { mName = xName; }
 
 	virtual void getdata();
 
