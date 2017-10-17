@@ -21,6 +21,7 @@ Professor::~Professor() {
 }
 
 void Professor::getdata() {
+	Person::getdata();
 	cout << "\n> Please enter Publications: ";
 	cin >> mPublications;
 

@@ -639,5 +639,10 @@ int main(void) {
 
 	cout << "\n\n> " << Foo();
 
+	//HK_VirualFunction Program
+	std::cout << "\n\n\t HK_VirualFunction Program";
+	std::cout << "\n------------------------------------------------------------------";
+	HK_VirualFunction ();
+
 	return 0;
 }

@@ -23,6 +23,7 @@ Student::~Student() {
 }
 
 void Student::getdata() {
+	Person::getdata();
 	cout << "\n> Please enter 6 Marks: ";
 	for(int index = 0; index < 6; index ++) {
 		cin >> mMarks[index];

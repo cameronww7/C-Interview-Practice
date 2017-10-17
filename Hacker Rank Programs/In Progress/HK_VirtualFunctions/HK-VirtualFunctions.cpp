@@ -71,5 +71,7 @@ void HK_VirualFunction() {
 	Professor p;
 	Person n;
 
+	p.getdata();
+
 
 }

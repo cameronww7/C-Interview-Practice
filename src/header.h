@@ -43,6 +43,7 @@ void Deques(void);
 void Vectors(void);
 void MoveSemantics(void);
 int Foo();
+void HK_VirualFunction();
 
 /****************************************************************************
  * 							Mini Programs
