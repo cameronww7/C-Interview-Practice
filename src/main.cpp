@@ -637,5 +637,7 @@ int main(void) {
 										<< " == " << expectedHK_InheritedCode;
 	}
 
+	cout << "\n\n> " << Foo();
+
 	return 0;
 }

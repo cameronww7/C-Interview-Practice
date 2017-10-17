@@ -25,6 +25,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Hacker\ Rank\ Programs \
 Hacker\ Rank\ Programs/In\ Progress \
+Hacker\ Rank\ Programs/In\ Progress/HK_VirtualFunctions \
 Mini\ Programs \
 Mini\ Programs/In\ Progress \
 Testing_C++_Structures \

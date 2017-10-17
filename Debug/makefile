@@ -12,6 +12,7 @@ RM := rm -rf
 -include Testing_C++_Structures/subdir.mk
 -include Mini\ Programs/In\ Progress/subdir.mk
 -include Mini\ Programs/subdir.mk
+-include Hacker\ Rank\ Programs/In\ Progress/HK_VirtualFunctions/subdir.mk
 -include Hacker\ Rank\ Programs/In\ Progress/subdir.mk
 -include Hacker\ Rank\ Programs/subdir.mk
 -include subdir.mk

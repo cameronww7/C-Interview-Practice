@@ -42,6 +42,7 @@ void Queues(void);
 void Deques(void);
 void Vectors(void);
 void MoveSemantics(void);
+int Foo();
 
 /****************************************************************************
  * 							Mini Programs
